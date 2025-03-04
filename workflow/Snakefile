@@ -1,0 +1,11 @@
+##################################################
+include: "rules/data_prep.smk"
+include: "rules/data_anal_align.smk"
+
+
+WILDCARD = ["alpha"]
+
+rule all:
+    input:
+        expand("results/metadata_concat/{wildcard}_metadata.tsv", wildcard=WILDCARD),
+        expand("results/alignment/{wildcard}_aligned.fasta", wildcard=WILDCARD)

@@ -1,0 +1,133 @@
+# Project information
+site_name: GeVarLi
+site_author: Nicolas Fernandez et al.
+site_url: https://transvihmi.pages.ird.fr/nfernandez/GeVarLi
+site_description: GeVarLi documentations
+site_dir: ../public # When you build your site, all of the files are written to the directory assigned to the site_dir configuration option (defaults to "site")
+docs_dir: ./
+
+# Repository
+repo_name: GeVarLi
+repo_url: https://forge.ird.fr/transvihmi/nfernandez/GeVarLi
+edit_uri: edit/main/docs/ # Allow to replace edit/master/docs use by default
+
+# Configuration
+theme:
+  language: en  # default language
+  name: material
+  logo: ./images/GeVarLi_by_DALL-E_icone.png # logo top left page
+  search_index_only: true
+  include_search_page: true
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    #- content.tabs.link
+    - content.tooltips
+    - header.autohide
+    #- navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    #- navigation.instant
+    #- navigation.prune
+    #- navigation.sections # collapse subsections
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate # remove table of content on the right side
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.snippets:
+      base_path: docs
+  - attr_list
+  - tables
+  - toc:
+      permalink: '#'
+
+# Plugins
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - external-markdown # Package mkdocs-embed-external-markdown /!\ has to be set before macros
+  - include-markdown # Package mkdocs-include-markdown-plugin
+  - macros
+
+# Customization
+extra:
+  homepage: en/ # Page displayed when clicking the logo
+  history_buttons: false
+  # --- set whole scope variables ---
+  contact: nicolas.fernandez@ird.fr
+  institute: IRD
+  unit: TransVIHMI
+  repo: https://forge.ird.fr/transvihmi/nfernandez/GeVarLi
+  color_table_header: "#333a99"
+  anaconda_channels:  "defaults, main, anaconda, free, r, mro, pro, archive, mro-archive, msys2"
+
+  # --- set alternative languages ---
+  alternate:
+    - name: English
+      link: en/ 
+      lang: en
+    - name: Français
+      link: fr/
+      lang: fr
+
+# Customization
+extra_css: 
+  - extra.css
+
+# page tree
+nav:
+  - Home (en):
+      - About: en/index.md
+      - Features: en/pages/features.md
+      - Installations: en/pages/installations.md
+      - Configurations: en/pages/configurations.md
+      - Usage: en/pages/usage.md
+      - Results: en/pages/results.md
+      - Glossary: en/pages/glossary.md
+      - Contributions: en/pages/contributions.md
+      - Acknowledgements: en/pages/acknowledgements.md
+      - References: en/pages/references.md
+      - Afroscreen: en/pages/afroscreen.md
+  - Accueil (fr):
+      - À propos: fr/index.md
+      - Fonctionnalités: fr/pages/features.md
+      - Installations: fr/pages/installations.md
+      - Configurations: fr/pages/configurations.md
+      - Utilisation: fr/pages/usage.md
+      - Résultats: fr/pages/results.md
+      - Glossaire: fr/pages/glossary.md
+      - Contributions: fr/pages/contributions.md
+      - Remerciements: fr/pages/acknowledgements.md
+      - Références: fr/pages/references.md
+      - Afroscreen: fr/pages/afroscreen.md

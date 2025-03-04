@@ -1,0 +1,12 @@
+name: workflow-core
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - snakemake=8.29
+  - snakedeploy
+  - snakemake-executor-plugin-slurm
+  - graphviz=12.0.0
+  - yq=3.4.3
+

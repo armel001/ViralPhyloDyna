@@ -1,0 +1,5 @@
+# To ignore Resources 
+/resources/*
+/results/*
+/documentations/*
+

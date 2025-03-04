@@ -1,0 +1,6 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+MissingInputException in rule all in file /Users/armel001/Documents/Workflow_template/workflow/Snakefile, line 4:
+Missing input files for rule all:
+    affected files:
+        results
