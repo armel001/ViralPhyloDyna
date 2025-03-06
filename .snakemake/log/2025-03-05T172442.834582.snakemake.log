@@ -1,0 +1,64 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+Using shell: /opt/homebrew/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job               count
+--------------  -------
+all                   1
+mask_alignment        1
+total                 2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Mar  5 17:24:44 2025]
+Job 4: 
+        Masking and triming the alignment
+        
+Reason: Missing output files: results/alignment/alpha_aligned_trimmed.fasta; Code has changed since last execution
+
+RuleException:
+CalledProcessError in file /Users/armel001/Documents/Workflow_template/workflow/rules/data_anal_trim.smk, line 18:
+Command 'set -euo pipefail;  
+        set -euo pipefail
+        Gblocks results/alignment/alpha_aligned.fasta -t=d -b5=h > results/log/alpha_aligned_trimmed.log 2>&1 || 
+        (echo "ERROR: Gblocks failed for alpha" >> results/log/alpha_aligned_trimmed.log && exit 1)
+        
+        if [ -f results/alignment/alpha_aligned.fasta-gb ]; then
+            mv results/alignment/alpha_aligned.fasta-gb results/alignment/alpha_aligned_trimmed.fasta
+            echo "Masking completed for alpha" >> results/log/alpha_aligned_trimmed.log
+        else
+            echo "ERROR: Gblocks did not generate an output file!" >> results/log/alpha_aligned_trimmed.log
+            exit 1
+        fi' returned non-zero exit status 1.
+[Wed Mar  5 17:24:50 2025]
+Error in rule mask_alignment:
+    jobid: 4
+    input: results/alignment/alpha_aligned.fasta
+    output: results/alignment/alpha_aligned_trimmed.fasta
+    log: results/log/alpha_aligned_trimmed.log (check log file(s) for error details)
+    conda-env: /Users/armel001/Documents/Workflow_template/.snakemake/conda/97e9d486c94103f65e1d4ceafd49cd5e_
+    shell:
+        
+        set -euo pipefail
+        Gblocks results/alignment/alpha_aligned.fasta -t=d -b5=h > results/log/alpha_aligned_trimmed.log 2>&1 || 
+        (echo "ERROR: Gblocks failed for alpha" >> results/log/alpha_aligned_trimmed.log && exit 1)
+        
+        if [ -f results/alignment/alpha_aligned.fasta-gb ]; then
+            mv results/alignment/alpha_aligned.fasta-gb results/alignment/alpha_aligned_trimmed.fasta
+            echo "Masking completed for alpha" >> results/log/alpha_aligned_trimmed.log
+        else
+            echo "ERROR: Gblocks did not generate an output file!" >> results/log/alpha_aligned_trimmed.log
+            exit 1
+        fi
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-03-05T172442.834582.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

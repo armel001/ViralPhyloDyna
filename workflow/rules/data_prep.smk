@@ -1,49 +1,45 @@
 ###############################################################################
 
 rule fasta_concatenation:
-    # Aim: Used to concatenate query and background fasta files
-    # Use: cat  
-    message:
+    message: 
         """
-        Concatenating query and background fasta files
-	"""
-   # params:
+        Concatenating query and background FASTA files and removing duplicates
+        """
     input: 
-        fasta_query ="resources/input_dir/{wildcard}_Query.fasta",
-        fasta_background ="resources/input_dir/{wildcard}_Background.fasta"
+        fasta_query="resources/input_dir/{sample}_Query.fasta",
+        fasta_background="resources/input_dir/{sample}_Background.fasta"
     output: 
-        msa ="results/fasta_concat/{wildcard}_msa.fasta",
-      #  report ="results/fasta_concat/report_{wildcard}.txt"
+        msa="results/fasta_concat/{sample}_msa.fasta",
+        msa_dedup="results/fasta_concat/{sample}_msa_rmdup.fasta"
     log:
-        "results/log/{wildcard}_fasta_concat.log"
+        "results/log/{sample}_fasta_concat.log"
     shell:
         """
-        cat {input.fasta_query} {input.fasta_background} > {output.msa}  
+        cat {input.fasta_query} {input.fasta_background} > {output.msa}
         echo "The concatenated FASTA file contains $(grep '>' {output.msa} | wc -l) sequences." >> {log}
-        2> {log} # Revoir le log 
+        seqkit rmdup -s -i -o {output.msa_dedup} {output.msa}
+        echo "After removing duplicates, the file contains $(grep '>' {output.msa_dedup} | wc -l) sequences." >> {log}
+        2>> {log}
         """
     
 ###############################################################################
 
 rule metadata_concatenation:
-    # Aim: Used to concatenate query and background metadata files
-    # Use: cat  
     message:
         """
         Concatenating query and background metadata files
-	"""
-   # params:
+        """
     input: 
-        metadata_query ="resources/input_dir/{wildcard}_Query.metadata.tsv",
-        metadata_background ="resources/input_dir/{wildcard}_Background.metadata.tsv"
+        metadata_query="resources/input_dir/{sample}_Query.metadata.tsv",
+        metadata_background="resources/input_dir/{sample}_Background.metadata.tsv"
     output: 
-        metadata ="results/metadata_concat/{wildcard}_metadata.tsv",
-      #  report ="results/fasta_concat/report_{wildcard}.txt"
+        metadata="results/metadata_concat/{sample}_metadata.tsv"
     log:
-        "results/log/{wildcard}_metadata_concat.log"
+        "results/log/{sample}_metadata_concat.log"
     shell:
         """
-        cat {input.metadata_query} > {output.metadata} && tail -n +2 \
-        {input.metadata_background} >> {output.metadata}  
-        2> {log} # Revoir le log 
+        cat {input.metadata_query} > {output.metadata}
+        tail -n +2 {input.metadata_background} >> {output.metadata}
+        echo "Metadata concatenation completed for {wildcards.sample}" >> {log}
+        2>> {log}
         """

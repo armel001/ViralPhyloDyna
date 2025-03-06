@@ -1,0 +1,8 @@
+name: treetime
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - treetime
+

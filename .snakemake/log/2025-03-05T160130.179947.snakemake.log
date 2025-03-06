@@ -1,0 +1,5 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+WorkflowError:
+Failed to open source file /Users/armel001/Documents/Workflow_template/workflow/rules/envs/mafft.yaml
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/armel001/Documents/Workflow_template/workflow/rules/envs/mafft.yaml'

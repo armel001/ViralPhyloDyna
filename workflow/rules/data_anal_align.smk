@@ -1,8 +1,6 @@
 ###############################################################################
 
 rule alignment:
-    # Aim: Used to align the concatenated FASTA file
-    # Use: mafft
     message:
         """
         Aligning the concatenated FASTA file
@@ -10,12 +8,12 @@ rule alignment:
     conda:
         "../envs/mafft.yaml"
     input: 
-        msa = "results/fasta_concat/{wildcard}_msa.fasta"
+        msa="results/fasta_concat/{sample}_msa_rmdup.fasta"
     output: 
-        msa_aligned = "results/alignment/{wildcard}_aligned.fasta"
+        msa_aligned="results/alignment/{sample}_aligned.fasta"
     log:
-        "results/log/{wildcard}_aligned.log"
+        "results/log/{sample}_aligned.log"
     shell: 
         """
-        mafft {input.msa} > {output.msa_aligned} 2> {log}
-    """
+        mafft {input.msa} > {output.msa_aligned} 2>> {log}
+        """

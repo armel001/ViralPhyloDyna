@@ -1,11 +1,18 @@
 ##################################################
 include: "rules/data_prep.smk"
 include: "rules/data_anal_align.smk"
+include: "rules/data_anal_trim.smk"
+include: "rules/data_anal_tree.smk"
+include: "rules/treetime_clock_testing.smk"
 
 
-WILDCARD = ["alpha"]
+SAMPLES = ["alpha"]
 
 rule all:
     input:
-        expand("results/metadata_concat/{wildcard}_metadata.tsv", wildcard=WILDCARD),
-        expand("results/alignment/{wildcard}_aligned.fasta", wildcard=WILDCARD)
+        expand("results/metadata_concat/{sample}_metadata.tsv", sample=SAMPLES),
+        expand("results/fasta_concat/{sample}_msa_rmdup.fasta", sample=SAMPLES),
+        expand("results/alignment/{sample}_aligned.fasta", sample=SAMPLES),
+        expand("results/alignment/{sample}_aligned_trimmed.fasta", sample=SAMPLES),
+        expand("results/phylogenetic_tree/{sample}_tree/{sample}_aligned_trimmed.fasta.treefile", sample=SAMPLES),
+        expand("results/treetime_clock/{sample}_tree/{sample}_aligned_trimmed.fasta.clock.nexus", sample=SAMPLES)

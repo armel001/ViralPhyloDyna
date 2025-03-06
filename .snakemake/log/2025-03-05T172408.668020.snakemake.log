@@ -1,0 +1,37 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+Using shell: /opt/homebrew/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job               count
+--------------  -------
+all                   1
+mask_alignment        1
+total                 2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Mar  5 17:24:11 2025]
+Job 4: 
+        Masking and triming the alignment
+        
+Reason: Missing output files: results/alignment/alpha_aligned_trimmed.fasta; Code has changed since last execution
+
+RuleException in rule mask_alignment in file /Users/armel001/Documents/Workflow_template/workflow/rules/data_anal_trim.smk, line 4:
+NameError: The name 'sample' is unknown in this context. Did you mean 'wildcards.sample'?, when formatting the following:
+
+        set -euo pipefail
+        Gblocks {input.msa_aligned} -t=d -b5=h > {log} 2>&1 || 
+        (echo "ERROR: Gblocks failed for {sample}" >> {log} && exit 1)
+        
+        if [ -f {input.msa_aligned}-gb ]; then
+            mv {input.msa_aligned}-gb {output.msa_aligned_trimmed}
+            echo "Masking completed for {wildcards.sample}" >> {log}
+        else
+            echo "ERROR: Gblocks did not generate an output file!" >> {log}
+            exit 1
+        fi
+        

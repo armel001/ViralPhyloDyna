@@ -1,0 +1,30 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+Using shell: /opt/homebrew/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job               count
+--------------  -------
+all                   1
+treetime_clock        1
+total                 2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar  6 14:52:07 2025]
+Job 6: 
+        Verifiying molecular clock signal 
+        
+Reason: Missing output files: results/treetime_clock/alpha_tree/alpha_aligned_trimmed.fasta.clock.nexus
+
+Waiting at most 5 seconds for missing files:
+results/treetime_clock/alpha_tree/alpha_aligned_trimmed.fasta.clock.nexus (missing locally)
+MissingOutputException in rule treetime_clock in file /Users/armel001/Documents/Workflow_template/workflow/rules/treetime_clock_testing.smk, line 1:
+Job 6  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+results/treetime_clock/alpha_tree/alpha_aligned_trimmed.fasta.clock.nexus (missing locally, parent dir contents: )
+WorkflowError:
+Failed to open source file /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/treetime.yaml
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/armel001/Documents/Workflow_template/workflow/rules/../envs/treetime.yaml'
