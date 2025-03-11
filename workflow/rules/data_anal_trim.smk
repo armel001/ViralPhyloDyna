@@ -5,9 +5,10 @@ rule mask_alignment:
     message:
         """
         Masking and trimming the alignment using Gblocks
+        Sample : {wildcards.sample}
         """
     conda:
-        "../envs/gblocks.yaml"  # Ensure this path is correct
+        GBLOCKS
     input: 
         msa_aligned="results/alignment/{sample}_aligned.fasta"
     output: 
@@ -17,7 +18,11 @@ rule mask_alignment:
     shell: 
         """
         set +e  
-        Gblocks {input.msa_aligned} -t=d -b5=h > {log} 2>&1
+        Gblocks {input.msa_aligned} \
+        -t=d \
+        -b5=h \
+        > {log} \
+        2>&1
         mv {input.msa_aligned}-gb {output.msa_aligned_trimmed}
         echo "Masking completed for {wildcards.sample}" >> {log}
         set -e  

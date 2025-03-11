@@ -4,7 +4,10 @@ rule fasta_concatenation:
     message: 
         """
         Concatenating query and background FASTA files and removing duplicates
+        Samples : {wildcards.sample}
         """
+    conda:
+        SEQKIT
     input: 
         fasta_query="resources/input_dir/{sample}_Query.fasta",
         fasta_background="resources/input_dir/{sample}_Background.fasta"
@@ -28,6 +31,7 @@ rule metadata_concatenation:
     message:
         """
         Concatenating query and background metadata files
+        Samples : {wildcards.sample}
         """
     input: 
         metadata_query="resources/input_dir/{sample}_Query.metadata.tsv",
@@ -43,3 +47,10 @@ rule metadata_concatenation:
         echo "Metadata concatenation completed for {wildcards.sample}" >> {log}
         2>> {log}
         """
+        
+        #"cat "                    # use this to concatenate files
+        #"{input.metadata_query} " # input file
+        #"-o 5 "                   # cmd optionnelle
+        #"1> {output.metadata} "   # output file
+        #"echo 'toto' "            # cmd optionnelle
+        #"2>> {log}"               # log file

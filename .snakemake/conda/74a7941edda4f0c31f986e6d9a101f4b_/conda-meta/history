@@ -1,0 +1,15 @@
+==> 2025-03-11 00:01:26 <==
+# cmd: /Users/armel001/miniforge3/condabin/conda env create --quiet --no-default-packages --file /Users/armel001/Documents/Workflow_template/.snakemake/conda/74a7941edda4f0c31f986e6d9a101f4b_.yaml --prefix /Users/armel001/Documents/Workflow_template/.snakemake/conda/74a7941edda4f0c31f986e6d9a101f4b_
+# conda version: 24.11.3
++conda-forge/osx-64::gawk-5.3.1-h0631170_0
++conda-forge/osx-64::gmp-6.3.0-hf036a51_2
++conda-forge/osx-64::libasprintf-0.23.1-h27064b9_0
++conda-forge/osx-64::libcxx-19.1.7-hf95d169_0
++conda-forge/osx-64::libgettextpo-0.23.1-h27064b9_0
++conda-forge/osx-64::libiconv-1.18-h4b5e92a_1
++conda-forge/osx-64::libintl-0.23.1-h27064b9_0
++conda-forge/osx-64::mafft-7.526-hfdf4475_0
++conda-forge/osx-64::mpfr-4.2.1-haed47dc_3
++conda-forge/osx-64::ncurses-6.5-h0622a9a_3
++conda-forge/osx-64::readline-8.2-h7cca4af_2
+# update specs: ['mafft']

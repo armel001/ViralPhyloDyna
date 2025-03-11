@@ -1,0 +1,73 @@
+{
+  "build": "hf95d169_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "__osx >=10.13"
+  ],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/libcxx-19.1.7-hf95d169_0",
+  "features": "",
+  "files": [
+    "lib/libc++.1.0.dylib",
+    "lib/libc++.1.dylib",
+    "lib/libc++.a",
+    "lib/libc++.dylib",
+    "lib/libc++experimental.a"
+  ],
+  "fn": "libcxx-19.1.7-hf95d169_0.conda",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/libcxx-19.1.7-hf95d169_0",
+    "type": 1
+  },
+  "md5": "4b8f8dc448d814169dbc58fc7286057d",
+  "name": "libcxx",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/libcxx-19.1.7-hf95d169_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libc++.1.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "9cd89561921a6e591a4990a0acef5f5b3da05e3e34994f87e345c3cb6a6e86bf",
+        "sha256_in_prefix": "9cd89561921a6e591a4990a0acef5f5b3da05e3e34994f87e345c3cb6a6e86bf",
+        "size_in_bytes": 1059784
+      },
+      {
+        "_path": "lib/libc++.1.dylib",
+        "path_type": "softlink",
+        "sha256": "9cd89561921a6e591a4990a0acef5f5b3da05e3e34994f87e345c3cb6a6e86bf",
+        "size_in_bytes": 1059784
+      },
+      {
+        "_path": "lib/libc++.a",
+        "path_type": "hardlink",
+        "sha256": "356afddb690f5ec9ccccb40f58af42fee5be1195de5b2a0cb518adb9fc07e2af",
+        "sha256_in_prefix": "356afddb690f5ec9ccccb40f58af42fee5be1195de5b2a0cb518adb9fc07e2af",
+        "size_in_bytes": 1574224
+      },
+      {
+        "_path": "lib/libc++.dylib",
+        "path_type": "softlink",
+        "sha256": "9cd89561921a6e591a4990a0acef5f5b3da05e3e34994f87e345c3cb6a6e86bf",
+        "size_in_bytes": 1059784
+      },
+      {
+        "_path": "lib/libc++experimental.a",
+        "path_type": "hardlink",
+        "sha256": "e46d33450a420c3be96a0c0697212e4d65e9d84be7994751170e189cfcb57dfe",
+        "sha256_in_prefix": "e46d33450a420c3be96a0c0697212e4d65e9d84be7994751170e189cfcb57dfe",
+        "size_in_bytes": 319664
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "6b2fa3fb1e8cd2000b0ed259e0c4e49cbef7b76890157fac3e494bc659a20330",
+  "size": 527924,
+  "subdir": "osx-64",
+  "timestamp": 1736877256000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libcxx-19.1.7-hf95d169_0.conda",
+  "version": "19.1.7"
+}

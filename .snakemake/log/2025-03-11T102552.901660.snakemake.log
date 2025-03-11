@@ -1,0 +1,44 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count
+------------------  -------
+all                       1
+treetime_ancestral        1
+total                     2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Mar 11 10:25:55 2025]
+Job 6: 
+        Inferring ancestral sequences using treetime
+        Sample : alpha
+        
+Reason: Missing output files: results/treetime_ancestral/alpha_tree/timetree.nexus
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Tue Mar 11 10:27:54 2025]
+Error in rule treetime_ancestral:
+    jobid: 6
+    input: results/phylogenetic_tree/alpha_tree/alpha_aligned_trimmed.fasta.treefile, results/alignment/alpha_aligned.fasta, results/metadata_concat/alpha_metadata.tsv
+    output: results/treetime_ancestral/alpha_tree, results/treetime_ancestral/alpha_tree/timetree.nexus
+    log: results/log/alpha_aligned_trimmed_tree_ancestral.log (check log file(s) for error details)
+    conda-env: /Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+    shell:
+        
+        treetime --aln results/alignment/alpha_aligned.fasta         --tree results/phylogenetic_tree/alpha_tree/alpha_aligned_trimmed.fasta.treefile           --dates results/metadata_concat/alpha_metadata.tsv             --clock-rate 0.008         --clock-std-dev 0.0035         --outdir results/treetime_ancestral/alpha_tree         --confidence
+        mv results/treetime_ancestral/alpha_tree/timetree.nexus "results/final_tree/alpha_timetree.nexus"
+        echo 'Time scale phylogenetic tree constructed alpha' >> results/log/alpha_aligned_trimmed_tree_ancestral.log
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job treetime_ancestral since they might be corrupted:
+results/treetime_ancestral/alpha_tree, results/treetime_ancestral/alpha_tree/timetree.nexus
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-03-11T102552.901660.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

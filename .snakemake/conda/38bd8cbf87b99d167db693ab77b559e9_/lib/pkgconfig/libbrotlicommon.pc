@@ -1,0 +1,11 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+exec_prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libbrotlicommon
+URL: https://github.com/google/brotli
+Description: Brotli common dictionary library
+Version: 1.1.0
+Libs: -L${libdir} -lbrotlicommon
+Cflags: -I${includedir}

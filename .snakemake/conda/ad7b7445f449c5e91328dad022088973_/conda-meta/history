@@ -1,0 +1,5 @@
+==> 2025-03-11 00:01:00 <==
+# cmd: /Users/armel001/miniforge3/condabin/conda env create --quiet --no-default-packages --file /Users/armel001/Documents/Workflow_template/.snakemake/conda/ad7b7445f449c5e91328dad022088973_.yaml --prefix /Users/armel001/Documents/Workflow_template/.snakemake/conda/ad7b7445f449c5e91328dad022088973_
+# conda version: 24.11.3
++bioconda/osx-64::seqkit-2.9.0-h527b516_0
+# update specs: ['seqkit']

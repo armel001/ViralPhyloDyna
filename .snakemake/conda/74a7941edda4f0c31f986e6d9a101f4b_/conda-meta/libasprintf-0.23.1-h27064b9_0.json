@@ -1,0 +1,44 @@
+{
+  "build": "h27064b9_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "__osx >=10.13",
+    "libcxx >=18"
+  ],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/libasprintf-0.23.1-h27064b9_0",
+  "features": "",
+  "files": [
+    "lib/libasprintf.0.dylib"
+  ],
+  "fn": "libasprintf-0.23.1-h27064b9_0.conda",
+  "license": "LGPL-2.1-or-later",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/libasprintf-0.23.1-h27064b9_0",
+    "type": 1
+  },
+  "md5": "43e1d9e1712208ac61941a513259248d",
+  "name": "libasprintf",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/libasprintf-0.23.1-h27064b9_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libasprintf.0.dylib",
+        "path_type": "hardlink",
+        "sha256": "120cfb66c100f3cc7163f56c33ace74d96e92dfcce5bcdf531cbd879fb31ee28",
+        "sha256_in_prefix": "120cfb66c100f3cc7163f56c33ace74d96e92dfcce5bcdf531cbd879fb31ee28",
+        "size_in_bytes": 28024
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "d6a4fbf497040ab4733c5dc65dd273ed6fa827ce6e67fd12abbe08c3cc3e192e",
+  "size": 42365,
+  "subdir": "osx-64",
+  "timestamp": 1739039157000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libasprintf-0.23.1-h27064b9_0.conda",
+  "version": "0.23.1"
+}

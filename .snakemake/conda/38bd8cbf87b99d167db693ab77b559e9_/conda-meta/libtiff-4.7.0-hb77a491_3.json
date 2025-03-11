@@ -1,0 +1,267 @@
+{
+  "build": "hb77a491_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "__osx >=10.13",
+    "lerc >=4.0.0,<5.0a0",
+    "libcxx >=18",
+    "libdeflate >=1.23,<1.24.0a0",
+    "libjpeg-turbo >=3.0.0,<4.0a0",
+    "liblzma >=5.6.3,<6.0a0",
+    "libwebp-base >=1.4.0,<2.0a0",
+    "libzlib >=1.3.1,<2.0a0",
+    "zstd >=1.5.6,<1.6.0a0"
+  ],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/libtiff-4.7.0-hb77a491_3",
+  "features": "",
+  "files": [
+    "bin/fax2ps",
+    "bin/fax2tiff",
+    "bin/pal2rgb",
+    "bin/ppm2tiff",
+    "bin/raw2tiff",
+    "bin/tiff2bw",
+    "bin/tiff2pdf",
+    "bin/tiff2ps",
+    "bin/tiff2rgba",
+    "bin/tiffcmp",
+    "bin/tiffcp",
+    "bin/tiffcrop",
+    "bin/tiffdither",
+    "bin/tiffdump",
+    "bin/tiffinfo",
+    "bin/tiffmedian",
+    "bin/tiffset",
+    "bin/tiffsplit",
+    "include/tiff.h",
+    "include/tiffconf.h",
+    "include/tiffio.h",
+    "include/tiffio.hxx",
+    "include/tiffvers.h",
+    "lib/libtiff.6.dylib",
+    "lib/libtiff.dylib",
+    "lib/libtiffxx.6.dylib",
+    "lib/libtiffxx.dylib",
+    "lib/pkgconfig/libtiff-4.pc"
+  ],
+  "fn": "libtiff-4.7.0-hb77a491_3.conda",
+  "license": "HPND",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/libtiff-4.7.0-hb77a491_3",
+    "type": 1
+  },
+  "md5": "6f2f9df7b093d6b33bc0c334acc7d2d9",
+  "name": "libtiff",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/libtiff-4.7.0-hb77a491_3.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/fax2ps",
+        "path_type": "hardlink",
+        "sha256": "dfe264e8e7f62dd863e3eaef499d9e0265015ed1622d4fd7988b7f46258f7814",
+        "sha256_in_prefix": "dfe264e8e7f62dd863e3eaef499d9e0265015ed1622d4fd7988b7f46258f7814",
+        "size_in_bytes": 19344
+      },
+      {
+        "_path": "bin/fax2tiff",
+        "path_type": "hardlink",
+        "sha256": "32149df3e987b6df826dd1ff0595c6160c14472d8db744a43a7035ddd4878e23",
+        "sha256_in_prefix": "32149df3e987b6df826dd1ff0595c6160c14472d8db744a43a7035ddd4878e23",
+        "size_in_bytes": 19424
+      },
+      {
+        "_path": "bin/pal2rgb",
+        "path_type": "hardlink",
+        "sha256": "565d27386a035fe8a12a0030132117e478c6e2b172c4f97e8a8d0ccbab11fb8d",
+        "sha256_in_prefix": "565d27386a035fe8a12a0030132117e478c6e2b172c4f97e8a8d0ccbab11fb8d",
+        "size_in_bytes": 18192
+      },
+      {
+        "_path": "bin/ppm2tiff",
+        "path_type": "hardlink",
+        "sha256": "a349cfb2742722187d695dfd3e5ea3c653b7b93ae2c64f79262545f09406851b",
+        "sha256_in_prefix": "a349cfb2742722187d695dfd3e5ea3c653b7b93ae2c64f79262545f09406851b",
+        "size_in_bytes": 18480
+      },
+      {
+        "_path": "bin/raw2tiff",
+        "path_type": "hardlink",
+        "sha256": "f3aac3bc06469caddf64174fa11e37f43cf26c4cc398efa4129b40249b466f4f",
+        "sha256_in_prefix": "f3aac3bc06469caddf64174fa11e37f43cf26c4cc398efa4129b40249b466f4f",
+        "size_in_bytes": 22624
+      },
+      {
+        "_path": "bin/tiff2bw",
+        "path_type": "hardlink",
+        "sha256": "c49bf75d23da41a4e4b92b3713f9b8db5b08b328b90b64cf3cebc85d47adfa77",
+        "sha256_in_prefix": "c49bf75d23da41a4e4b92b3713f9b8db5b08b328b90b64cf3cebc85d47adfa77",
+        "size_in_bytes": 22528
+      },
+      {
+        "_path": "bin/tiff2pdf",
+        "path_type": "hardlink",
+        "sha256": "66b0b3edfcef47869080847b2743836dbc326b0d86882ce221c39b50d5a50308",
+        "sha256_in_prefix": "66b0b3edfcef47869080847b2743836dbc326b0d86882ce221c39b50d5a50308",
+        "size_in_bytes": 94272
+      },
+      {
+        "_path": "bin/tiff2ps",
+        "path_type": "hardlink",
+        "sha256": "2657ad52d25970e505013c37815f8b48a5a461eab41eb066edd4ee022f8f650d",
+        "sha256_in_prefix": "2657ad52d25970e505013c37815f8b48a5a461eab41eb066edd4ee022f8f650d",
+        "size_in_bytes": 55408
+      },
+      {
+        "_path": "bin/tiff2rgba",
+        "path_type": "hardlink",
+        "sha256": "21470e35a3fe5de522142140288d10f232d2f489d2200b5362ecc460ce98cdab",
+        "sha256_in_prefix": "21470e35a3fe5de522142140288d10f232d2f489d2200b5362ecc460ce98cdab",
+        "size_in_bytes": 19104
+      },
+      {
+        "_path": "bin/tiffcmp",
+        "path_type": "hardlink",
+        "sha256": "0fc66f953b9ebfd61f1433e0e96d113381bcea7893fc1ce4e5caa8ebae1c62e9",
+        "sha256_in_prefix": "0fc66f953b9ebfd61f1433e0e96d113381bcea7893fc1ce4e5caa8ebae1c62e9",
+        "size_in_bytes": 22568
+      },
+      {
+        "_path": "bin/tiffcp",
+        "path_type": "hardlink",
+        "sha256": "2a584f5a4e23cd3bcb207bbe6ba42bc2ed0c5e0198c30aae4f0220cbc0870aa3",
+        "sha256_in_prefix": "2a584f5a4e23cd3bcb207bbe6ba42bc2ed0c5e0198c30aae4f0220cbc0870aa3",
+        "size_in_bytes": 46656
+      },
+      {
+        "_path": "bin/tiffcrop",
+        "path_type": "hardlink",
+        "sha256": "2c238bda3752d8f9d6cde0d1531268ffa8889643daee5eb44be225e120f975ff",
+        "sha256_in_prefix": "2c238bda3752d8f9d6cde0d1531268ffa8889643daee5eb44be225e120f975ff",
+        "size_in_bytes": 113016
+      },
+      {
+        "_path": "bin/tiffdither",
+        "path_type": "hardlink",
+        "sha256": "c987a709afa032cbfd7778c10af33ea1a7748643c779e9da0a1e9a399069141e",
+        "sha256_in_prefix": "c987a709afa032cbfd7778c10af33ea1a7748643c779e9da0a1e9a399069141e",
+        "size_in_bytes": 18280
+      },
+      {
+        "_path": "bin/tiffdump",
+        "path_type": "hardlink",
+        "sha256": "2da4ceeb8042146133e780e5066e1adb12b13dc5d5a5cd87a77145627e215503",
+        "sha256_in_prefix": "2da4ceeb8042146133e780e5066e1adb12b13dc5d5a5cd87a77145627e215503",
+        "size_in_bytes": 23256
+      },
+      {
+        "_path": "bin/tiffinfo",
+        "path_type": "hardlink",
+        "sha256": "ed65f390de7ea25e370e42b97deae9d668cee9ba932a5f5781f66308c7d92ee3",
+        "sha256_in_prefix": "ed65f390de7ea25e370e42b97deae9d668cee9ba932a5f5781f66308c7d92ee3",
+        "size_in_bytes": 24472
+      },
+      {
+        "_path": "bin/tiffmedian",
+        "path_type": "hardlink",
+        "sha256": "17a0cda920a2413c80e73d3553f9eaff1a3f6f363aa7889cb8802c02b7837e48",
+        "sha256_in_prefix": "17a0cda920a2413c80e73d3553f9eaff1a3f6f363aa7889cb8802c02b7837e48",
+        "size_in_bytes": 22656
+      },
+      {
+        "_path": "bin/tiffset",
+        "path_type": "hardlink",
+        "sha256": "750e1d88b3ca54a0cda5ee77cd71009585a8f9cf3b2b9dc52a57d65db67a2373",
+        "sha256_in_prefix": "750e1d88b3ca54a0cda5ee77cd71009585a8f9cf3b2b9dc52a57d65db67a2373",
+        "size_in_bytes": 18584
+      },
+      {
+        "_path": "bin/tiffsplit",
+        "path_type": "hardlink",
+        "sha256": "af4d4c435902eb0fd5b90a5d0aa782bb41cd4297dd38c8935cf34bf4cdd38e30",
+        "sha256_in_prefix": "af4d4c435902eb0fd5b90a5d0aa782bb41cd4297dd38c8935cf34bf4cdd38e30",
+        "size_in_bytes": 18944
+      },
+      {
+        "_path": "include/tiff.h",
+        "path_type": "hardlink",
+        "sha256": "ec0904a51c9392cb6a63dc5e9d563e5adb8af64517264176f370b96b6deb5200",
+        "sha256_in_prefix": "ec0904a51c9392cb6a63dc5e9d563e5adb8af64517264176f370b96b6deb5200",
+        "size_in_bytes": 59865
+      },
+      {
+        "_path": "include/tiffconf.h",
+        "path_type": "hardlink",
+        "sha256": "5627cc60319238a585f0fd1353df183d8a19bda06e28569aa9b5f3c1051531bc",
+        "sha256_in_prefix": "5627cc60319238a585f0fd1353df183d8a19bda06e28569aa9b5f3c1051531bc",
+        "size_in_bytes": 3977
+      },
+      {
+        "_path": "include/tiffio.h",
+        "path_type": "hardlink",
+        "sha256": "70119b9db897a364821a108ff0adc09f26c20ad9b6d9e943eb376ee3edb6166f",
+        "sha256_in_prefix": "70119b9db897a364821a108ff0adc09f26c20ad9b6d9e943eb376ee3edb6166f",
+        "size_in_bytes": 28556
+      },
+      {
+        "_path": "include/tiffio.hxx",
+        "path_type": "hardlink",
+        "sha256": "cd7ebd22cdba45167415b000e923f7d0ef9301028a3e775e3ace9e8c60d15ece",
+        "sha256_in_prefix": "cd7ebd22cdba45167415b000e923f7d0ef9301028a3e775e3ace9e8c60d15ece",
+        "size_in_bytes": 1525
+      },
+      {
+        "_path": "include/tiffvers.h",
+        "path_type": "hardlink",
+        "sha256": "5c6b08dc11a17f4488aecca0ced446f815f374dcd7ef364f637171f7256003ee",
+        "sha256_in_prefix": "5c6b08dc11a17f4488aecca0ced446f815f374dcd7ef364f637171f7256003ee",
+        "size_in_bytes": 1415
+      },
+      {
+        "_path": "lib/libtiff.6.dylib",
+        "path_type": "hardlink",
+        "sha256": "459b6fda9c6699ec719ee9d5d50223209374c1a9edfcbfb61f44979182e6838e",
+        "sha256_in_prefix": "459b6fda9c6699ec719ee9d5d50223209374c1a9edfcbfb61f44979182e6838e",
+        "size_in_bytes": 614384
+      },
+      {
+        "_path": "lib/libtiff.dylib",
+        "path_type": "softlink",
+        "sha256": "459b6fda9c6699ec719ee9d5d50223209374c1a9edfcbfb61f44979182e6838e",
+        "size_in_bytes": 614384
+      },
+      {
+        "_path": "lib/libtiffxx.6.dylib",
+        "path_type": "hardlink",
+        "sha256": "24052fa63e15d12841e8a31db1d7eaf189ec04e6f0a58e0fd6fda18a1d00b765",
+        "sha256_in_prefix": "24052fa63e15d12841e8a31db1d7eaf189ec04e6f0a58e0fd6fda18a1d00b765",
+        "size_in_bytes": 20504
+      },
+      {
+        "_path": "lib/libtiffxx.dylib",
+        "path_type": "softlink",
+        "sha256": "24052fa63e15d12841e8a31db1d7eaf189ec04e6f0a58e0fd6fda18a1d00b765",
+        "size_in_bytes": 20504
+      },
+      {
+        "_path": "lib/pkgconfig/libtiff-4.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/libtiff_1734398596395/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_p",
+        "sha256": "671b0dfde386b99ee5b2d4a89badb4addee17b78d2c750f1a21765d7091049b4",
+        "sha256_in_prefix": "b5d0b2a59b8068c4cb421d80071657818dcc1c9fa6aa0e0b6963d8855cb3ad89",
+        "size_in_bytes": 607
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "bb50df7cfc1acb11eae63c5f4fdc251d381cda96bf02c086c3202c83a5200032",
+  "size": 400099,
+  "subdir": "osx-64",
+  "timestamp": 1734398943000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libtiff-4.7.0-hb77a491_3.conda",
+  "version": "4.7.0"
+}

@@ -1,0 +1,444 @@
+{
+  "build": "pyhdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "biopython >=1.67,!=1.77,!=1.78",
+    "matplotlib-base >=2.0",
+    "numpy >=1.10.4",
+    "pandas >=0.17.1",
+    "python >=3.7",
+    "scipy >=0.16.1"
+  ],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/treetime-0.11.4-pyhdfd78af_0",
+  "features": "",
+  "files": [
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/LICENSE",
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/METADATA",
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/RECORD",
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/WHEEL",
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/entry_points.txt",
+    "lib/python3.13/site-packages/phylo_treetime-0.11.4.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/treetime/CLI_io.py",
+    "lib/python3.13/site-packages/treetime/__init__.py",
+    "lib/python3.13/site-packages/treetime/__main__.py",
+    "lib/python3.13/site-packages/treetime/aa_models.py",
+    "lib/python3.13/site-packages/treetime/arg.py",
+    "lib/python3.13/site-packages/treetime/argument_parser.py",
+    "lib/python3.13/site-packages/treetime/branch_len_interpolator.py",
+    "lib/python3.13/site-packages/treetime/clock_filter_methods.py",
+    "lib/python3.13/site-packages/treetime/clock_tree.py",
+    "lib/python3.13/site-packages/treetime/config.py",
+    "lib/python3.13/site-packages/treetime/distribution.py",
+    "lib/python3.13/site-packages/treetime/gtr.py",
+    "lib/python3.13/site-packages/treetime/gtr_site_specific.py",
+    "lib/python3.13/site-packages/treetime/merger_models.py",
+    "lib/python3.13/site-packages/treetime/node_interpolator.py",
+    "lib/python3.13/site-packages/treetime/nuc_models.py",
+    "lib/python3.13/site-packages/treetime/seq_utils.py",
+    "lib/python3.13/site-packages/treetime/seqgen.py",
+    "lib/python3.13/site-packages/treetime/sequence_data.py",
+    "lib/python3.13/site-packages/treetime/treeanc.py",
+    "lib/python3.13/site-packages/treetime/treeregression.py",
+    "lib/python3.13/site-packages/treetime/treetime.py",
+    "lib/python3.13/site-packages/treetime/utils.py",
+    "lib/python3.13/site-packages/treetime/vcf_utils.py",
+    "lib/python3.13/site-packages/treetime/wrappers.py",
+    "lib/python3.13/site-packages/treetime/__pycache__/CLI_io.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/__main__.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/aa_models.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/arg.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/argument_parser.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/branch_len_interpolator.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/clock_filter_methods.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/clock_tree.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/config.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/distribution.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/gtr.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/gtr_site_specific.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/merger_models.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/node_interpolator.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/nuc_models.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/seq_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/seqgen.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/sequence_data.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/treeanc.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/treeregression.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/treetime.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/vcf_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/treetime/__pycache__/wrappers.cpython-313.pyc",
+    "bin/treetime"
+  ],
+  "fn": "treetime-0.11.4-pyhdfd78af_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/treetime-0.11.4-pyhdfd78af_0",
+    "type": 1
+  },
+  "md5": "68e49edbcb3ebc9882905cf76b38ed1e",
+  "name": "treetime",
+  "noarch": "python",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/treetime-0.11.4-pyhdfd78af_0",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "ec0b160980f238a1759a4b9e6661089ef440fef38937facd1994c8a0f4099da1",
+        "sha256_in_prefix": "ec0b160980f238a1759a4b9e6661089ef440fef38937facd1994c8a0f4099da1",
+        "size_in_bytes": 1100
+      },
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5756e0e0e184311fc6629b198eeaab4d01708d712a8062cff1513ac3b23ca400",
+        "sha256_in_prefix": "5756e0e0e184311fc6629b198eeaab4d01708d712a8062cff1513ac3b23ca400",
+        "size_in_bytes": 13461
+      },
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "66ad31a77e2710b834ebae2b290dc41b9b4a25c93dd3ba69f3ca9c225e0664e0",
+        "sha256_in_prefix": "66ad31a77e2710b834ebae2b290dc41b9b4a25c93dd3ba69f3ca9c225e0664e0",
+        "size_in_bytes": 4216
+      },
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "4749dceaa4f1ba82e4ed2840dbf63e51690df1975f0c11b607a12aa73d965dbb",
+        "sha256_in_prefix": "4749dceaa4f1ba82e4ed2840dbf63e51690df1975f0c11b607a12aa73d965dbb",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "2bb8ef5ff41c9e91b6a70278f2bb49cab9eaebbd461713734fb75ba2884ad8ab",
+        "sha256_in_prefix": "2bb8ef5ff41c9e91b6a70278f2bb49cab9eaebbd461713734fb75ba2884ad8ab",
+        "size_in_bytes": 82
+      },
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "39544913fd1f06d652a9eba868d3e423b93828e5473aaf09e6438efe8e951f77",
+        "sha256_in_prefix": "39544913fd1f06d652a9eba868d3e423b93828e5473aaf09e6438efe8e951f77",
+        "size_in_bytes": 52
+      },
+      {
+        "_path": "site-packages/phylo_treetime-0.11.4.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ac4572d3d0f0ac82aea83dbe2277c79192212c46deb708d0889085717107426d",
+        "sha256_in_prefix": "ac4572d3d0f0ac82aea83dbe2277c79192212c46deb708d0889085717107426d",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "site-packages/treetime/CLI_io.py",
+        "path_type": "hardlink",
+        "sha256": "17b7d9c6fec6e58c7c51890b21f81abb519ab2cc9e04a75cc49efab6ff675db2",
+        "sha256_in_prefix": "17b7d9c6fec6e58c7c51890b21f81abb519ab2cc9e04a75cc49efab6ff675db2",
+        "size_in_bytes": 12637
+      },
+      {
+        "_path": "site-packages/treetime/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a5c8e1685eb1c80b35e32c9aa45754c8a761f078c34d2b82e128fa2beba49d9b",
+        "sha256_in_prefix": "a5c8e1685eb1c80b35e32c9aa45754c8a761f078c34d2b82e128fa2beba49d9b",
+        "size_in_bytes": 1951
+      },
+      {
+        "_path": "site-packages/treetime/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "7a7e12fb437cc132ccb737720e6e40ce82caa02e4afc776f639407c4fbd94bbc",
+        "sha256_in_prefix": "7a7e12fb437cc132ccb737720e6e40ce82caa02e4afc776f639407c4fbd94bbc",
+        "size_in_bytes": 649
+      },
+      {
+        "_path": "site-packages/treetime/aa_models.py",
+        "path_type": "hardlink",
+        "sha256": "64e61db2bfee68b9300ec2dd9adf941a402a7dfe910afa7dac8ce94c12b25e07",
+        "sha256_in_prefix": "64e61db2bfee68b9300ec2dd9adf941a402a7dfe910afa7dac8ce94c12b25e07",
+        "size_in_bytes": 4591
+      },
+      {
+        "_path": "site-packages/treetime/arg.py",
+        "path_type": "hardlink",
+        "sha256": "fde95a82c237384b7015512501ea30395ae04b3bbd20ceac5135c805414cd2a4",
+        "sha256_in_prefix": "fde95a82c237384b7015512501ea30395ae04b3bbd20ceac5135c805414cd2a4",
+        "size_in_bytes": 5674
+      },
+      {
+        "_path": "site-packages/treetime/argument_parser.py",
+        "path_type": "hardlink",
+        "sha256": "78d98b34e403c044694df1d5c603a4f712b6c49a7e789a3cdb069cd08cf10023",
+        "sha256_in_prefix": "78d98b34e403c044694df1d5c603a4f712b6c49a7e789a3cdb069cd08cf10023",
+        "size_in_bytes": 22032
+      },
+      {
+        "_path": "site-packages/treetime/branch_len_interpolator.py",
+        "path_type": "hardlink",
+        "sha256": "f2a7ee5b34fa8fe33ff70e78b4b5bb9334b7a3d2e11578944dfc28a824773336",
+        "sha256_in_prefix": "f2a7ee5b34fa8fe33ff70e78b4b5bb9334b7a3d2e11578944dfc28a824773336",
+        "size_in_bytes": 6196
+      },
+      {
+        "_path": "site-packages/treetime/clock_filter_methods.py",
+        "path_type": "hardlink",
+        "sha256": "e2e0ac1498e08894cbbc60281de156baf6ed92ee3aae4d23d28eb4d97fed789b",
+        "sha256_in_prefix": "e2e0ac1498e08894cbbc60281de156baf6ed92ee3aae4d23d28eb4d97fed789b",
+        "size_in_bytes": 8824
+      },
+      {
+        "_path": "site-packages/treetime/clock_tree.py",
+        "path_type": "hardlink",
+        "sha256": "01b9e17da15aa9288f5cb21c6031508a5a08b1f9128cb46cef87316d7ed0b8c9",
+        "sha256_in_prefix": "01b9e17da15aa9288f5cb21c6031508a5a08b1f9128cb46cef87316d7ed0b8c9",
+        "size_in_bytes": 56422
+      },
+      {
+        "_path": "site-packages/treetime/config.py",
+        "path_type": "hardlink",
+        "sha256": "fc05c09321de33e3043f36e25d4ac180cf48872dbcb218a4e19301dd3a1a5119",
+        "sha256_in_prefix": "fc05c09321de33e3043f36e25d4ac180cf48872dbcb218a4e19301dd3a1a5119",
+        "size_in_bytes": 1035
+      },
+      {
+        "_path": "site-packages/treetime/distribution.py",
+        "path_type": "hardlink",
+        "sha256": "2fdaac919acf70006f098da1aedf0edae45d4ecb8709ef6d4c65c07124a19033",
+        "sha256_in_prefix": "2fdaac919acf70006f098da1aedf0edae45d4ecb8709ef6d4c65c07124a19033",
+        "size_in_bytes": 16881
+      },
+      {
+        "_path": "site-packages/treetime/gtr.py",
+        "path_type": "hardlink",
+        "sha256": "33718eb12cce4b2a8c5c0391b1bbf91b089ec326ca931d251934d4a257e08324",
+        "sha256_in_prefix": "33718eb12cce4b2a8c5c0391b1bbf91b089ec326ca931d251934d4a257e08324",
+        "size_in_bytes": 39412
+      },
+      {
+        "_path": "site-packages/treetime/gtr_site_specific.py",
+        "path_type": "hardlink",
+        "sha256": "f12e2cef78b7df2fb01a4a8307ad5e17ca04c802cf8b93c7b8a920df2ac02e2d",
+        "sha256_in_prefix": "f12e2cef78b7df2fb01a4a8307ad5e17ca04c802cf8b93c7b8a920df2ac02e2d",
+        "size_in_bytes": 16033
+      },
+      {
+        "_path": "site-packages/treetime/merger_models.py",
+        "path_type": "hardlink",
+        "sha256": "33fcaae99944f2f1d6daaf93f009a90a6f495043f8f68592c5bc01125e1df051",
+        "sha256_in_prefix": "33fcaae99944f2f1d6daaf93f009a90a6f495043f8f68592c5bc01125e1df051",
+        "size_in_bytes": 18545
+      },
+      {
+        "_path": "site-packages/treetime/node_interpolator.py",
+        "path_type": "hardlink",
+        "sha256": "d1b28470a3e7e40d075e50099ea963c09f2915f12f8915b3dc6ea02a87f1d1ad",
+        "sha256_in_prefix": "d1b28470a3e7e40d075e50099ea963c09f2915f12f8915b3dc6ea02a87f1d1ad",
+        "size_in_bytes": 15509
+      },
+      {
+        "_path": "site-packages/treetime/nuc_models.py",
+        "path_type": "hardlink",
+        "sha256": "a6491f27da77941cfcdc87aad9230441360390abe4f32edeab7fd9e0eb29100d",
+        "sha256_in_prefix": "a6491f27da77941cfcdc87aad9230441360390abe4f32edeab7fd9e0eb29100d",
+        "size_in_bytes": 7263
+      },
+      {
+        "_path": "site-packages/treetime/seq_utils.py",
+        "path_type": "hardlink",
+        "sha256": "ba2e7a6ab5bd6e44f4fb01b9ec6b7064c9661b717e13d06d359b60a013bc2da0",
+        "sha256_in_prefix": "ba2e7a6ab5bd6e44f4fb01b9ec6b7064c9661b717e13d06d359b60a013bc2da0",
+        "size_in_bytes": 14081
+      },
+      {
+        "_path": "site-packages/treetime/seqgen.py",
+        "path_type": "hardlink",
+        "sha256": "cf85f018682bb1342c414c6d383d621641546f4e0f66d70428488f2ea487d0f2",
+        "sha256_in_prefix": "cf85f018682bb1342c414c6d383d621641546f4e0f66d70428488f2ea487d0f2",
+        "size_in_bytes": 3177
+      },
+      {
+        "_path": "site-packages/treetime/sequence_data.py",
+        "path_type": "hardlink",
+        "sha256": "3d4afbbe5065203e74d6e9d71601d56a7f470427662bd6bb948f6b0acbe1f655",
+        "sha256_in_prefix": "3d4afbbe5065203e74d6e9d71601d56a7f470427662bd6bb948f6b0acbe1f655",
+        "size_in_bytes": 22576
+      },
+      {
+        "_path": "site-packages/treetime/treeanc.py",
+        "path_type": "hardlink",
+        "sha256": "0b23743b6c8a5b779f0a802c69eac08a4ec1c9ee5aca2df1c9e2d0b6a33bb2fd",
+        "sha256_in_prefix": "0b23743b6c8a5b779f0a802c69eac08a4ec1c9ee5aca2df1c9e2d0b6a33bb2fd",
+        "size_in_bytes": 72897
+      },
+      {
+        "_path": "site-packages/treetime/treeregression.py",
+        "path_type": "hardlink",
+        "sha256": "67c8e73c6e362675d957891528cd7d757d57f43dad5c631b474b41be0bc8dc18",
+        "sha256_in_prefix": "67c8e73c6e362675d957891528cd7d757d57f43dad5c631b474b41be0bc8dc18",
+        "size_in_bytes": 22803
+      },
+      {
+        "_path": "site-packages/treetime/treetime.py",
+        "path_type": "hardlink",
+        "sha256": "b2ff656bbd5cbd1fb1ca1de0451c124f87963f66d596828b5a62a36f913946a9",
+        "sha256_in_prefix": "b2ff656bbd5cbd1fb1ca1de0451c124f87963f66d596828b5a62a36f913946a9",
+        "size_in_bytes": 55252
+      },
+      {
+        "_path": "site-packages/treetime/utils.py",
+        "path_type": "hardlink",
+        "sha256": "0b6dc92388bf6606add3a097730709594f64e6b9622785e573143e4f1c2ec62a",
+        "sha256_in_prefix": "0b6dc92388bf6606add3a097730709594f64e6b9622785e573143e4f1c2ec62a",
+        "size_in_bytes": 18329
+      },
+      {
+        "_path": "site-packages/treetime/vcf_utils.py",
+        "path_type": "hardlink",
+        "sha256": "437c1ab459c24d38aba8fa37460b52e4086bf1d2d5c203b5f4559de73f40fdf2",
+        "sha256_in_prefix": "437c1ab459c24d38aba8fa37460b52e4086bf1d2d5c203b5f4559de73f40fdf2",
+        "size_in_bytes": 30847
+      },
+      {
+        "_path": "site-packages/treetime/wrappers.py",
+        "path_type": "hardlink",
+        "sha256": "6ac3ccf91af740c116a526da334fcb1771b55f99d40c8585b262bdc29c44f843",
+        "sha256_in_prefix": "6ac3ccf91af740c116a526da334fcb1771b55f99d40c8585b262bdc29c44f843",
+        "size_in_bytes": 41132
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/CLI_io.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/__main__.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/aa_models.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/arg.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/argument_parser.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/branch_len_interpolator.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/clock_filter_methods.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/clock_tree.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/config.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/distribution.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/gtr.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/gtr_site_specific.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/merger_models.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/node_interpolator.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/nuc_models.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/seq_utils.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/seqgen.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/sequence_data.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/treeanc.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/treeregression.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/treetime.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/utils.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/vcf_utils.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/treetime/__pycache__/wrappers.cpython-313.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "bin/treetime",
+        "path_type": "unix_python_entry_point"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "treetime",
+  "sha256": "84c1cc50726757bb54f3ed8c7e65dbe7dae922e595ad3dc18caff159500c9d3f",
+  "size": 121533,
+  "subdir": "noarch",
+  "timestamp": 1723342759000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/noarch/treetime-0.11.4-pyhdfd78af_0.tar.bz2",
+  "version": "0.11.4"
+}

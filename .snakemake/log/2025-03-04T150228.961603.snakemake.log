@@ -1,8 +1,0 @@
-host: MPLCLTPO1561.ird.priv
-Building DAG of jobs...
-MissingInputException in rule alignment in file /Users/armel001/Documents/Workflow_template/workflow/rules/data_anal_align.smk, line 3:
-Missing input files for rule alignment:
-    output: results/alignment/alpha_aligned.fasta
-    wildcards: wildcard=alpha
-    affected files:
-        results/alignment/alpha_msa.fasta

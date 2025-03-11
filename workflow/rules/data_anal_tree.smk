@@ -5,9 +5,10 @@ rule initial_tree:
     message:
         """
         Building a phylogenetic tree using IQ-TREE
+        Sample : {wildcards.sample}
         """
     conda:
-        "../envs/iqtree.yaml"
+        IQTREE
     input: 
         msa_aligned_trimmed="results/alignment/{sample}_aligned_trimmed.fasta"
     output: 

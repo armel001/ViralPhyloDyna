@@ -1,0 +1,41 @@
+{
+  "build": "h527b516_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/seqkit-2.9.0-h527b516_0",
+  "features": "",
+  "files": [
+    "bin/seqkit"
+  ],
+  "fn": "seqkit-2.9.0-h527b516_0.tar.bz2",
+  "license": "MIT",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/seqkit-2.9.0-h527b516_0",
+    "type": 1
+  },
+  "md5": "fa90a4026be7ce69f08198f2fb610bd3",
+  "name": "seqkit",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/seqkit-2.9.0-h527b516_0.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/seqkit",
+        "path_type": "hardlink",
+        "sha256": "cdebc9b58c1a82a195531398d2c098d3bb544d82fdc92e1a5f00d4977b551b9f",
+        "sha256_in_prefix": "cdebc9b58c1a82a195531398d2c098d3bb544d82fdc92e1a5f00d4977b551b9f",
+        "size_in_bytes": 19339600
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "seqkit",
+  "sha256": "08ddfdafa7ba27636edb8e21801179b283fa02263070c6caf4db5f1fa1404a7d",
+  "size": 7799294,
+  "subdir": "osx-64",
+  "timestamp": 1730593676000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/osx-64/seqkit-2.9.0-h527b516_0.tar.bz2",
+  "version": "2.9.0"
+}

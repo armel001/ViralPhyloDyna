@@ -1,0 +1,10 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: qhullcpp
+Description: Qhull C++ library
+Version: 8.0.2
+Libs: -L${libdir} -lqhullcpp
+Cflags: -I${includedir}
+

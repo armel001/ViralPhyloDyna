@@ -1,0 +1,41 @@
+{
+  "build": "h527b516_2",
+  "build_number": 2,
+  "channel": "https://conda.anaconda.org/bioconda/osx-64",
+  "constrains": [],
+  "depends": [],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/gblocks-0.91b-h527b516_2",
+  "features": "",
+  "files": [
+    "bin/Gblocks"
+  ],
+  "fn": "gblocks-0.91b-h527b516_2.tar.bz2",
+  "license": "The software and its accompanying documentation are provided as is, without guarantee of support or maintenance.",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/gblocks-0.91b-h527b516_2",
+    "type": 1
+  },
+  "md5": "31ece5c8842e500c112a3e0ef57e7252",
+  "name": "gblocks",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/gblocks-0.91b-h527b516_2.tar.bz2",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/Gblocks",
+        "path_type": "hardlink",
+        "sha256": "f5f489a2a9dbe03b82859523359fe68f8897a7066bda58963e801337370bcbb4",
+        "sha256_in_prefix": "f5f489a2a9dbe03b82859523359fe68f8897a7066bda58963e801337370bcbb4",
+        "size_in_bytes": 218888
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "gblocks",
+  "sha256": "566567e9871a3446a9e84b6bad0e1f655a9671916f1fe866e0301f18a9cebc56",
+  "size": 77386,
+  "subdir": "osx-64",
+  "timestamp": 1617235319000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/osx-64/gblocks-0.91b-h527b516_2.tar.bz2",
+  "version": "0.91b"
+}

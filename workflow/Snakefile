@@ -1,12 +1,49 @@
+
+
+
+
+
+##################################################
+# CONFIGURATION
+##################################################
+configfile: "config/config.yaml"
+
+
+# RESOURCES
+##################################################
+
+THREADS = config["resources"]["threads"]
+MEM = config["resources"]["memory"]
+TIME = config["resources"]["time"]
+
+
+##################################################
+# ENVIRONMENT
+##################################################
+MAFFT = config["envs"]["mafft"]
+TREETIME = config["envs"]["treetime"]
+GBLOCKS = config["envs"]["gblocks"]
+IQTREE = config["envs"]["iqtree"]
+SEQKIT = config["envs"]["seqkit"]
+
+
+# PARAMS
+##################################################
+SEQUENCE_LENGTH = config["params"]["treetime"]["seq_len"]
+TREETIME_CLOCK_RATE = config["params"]["treetime"]["clock_rate"]
+TREETIME_CLOCK_STD_DEV = config["params"]["treetime"]["clock_std_dev"]
+THREADS_MAFFT = config["params"]["mafft"]["threads"]
+
+SAMPLES, = glob_wildcards("resources/input_dir/{sample}_Query.fasta")
+
+# INCLUDES
 ##################################################
 include: "rules/data_prep.smk"
 include: "rules/data_anal_align.smk"
 include: "rules/data_anal_trim.smk"
 include: "rules/data_anal_tree.smk"
 include: "rules/treetime_clock_testing.smk"
-
-
-SAMPLES = ["alpha"]
+include: "rules/treetime_ancestral.smk"
 
 rule all:
     input:
@@ -15,4 +52,6 @@ rule all:
         expand("results/alignment/{sample}_aligned.fasta", sample=SAMPLES),
         expand("results/alignment/{sample}_aligned_trimmed.fasta", sample=SAMPLES),
         expand("results/phylogenetic_tree/{sample}_tree/{sample}_aligned_trimmed.fasta.treefile", sample=SAMPLES),
-        expand("results/treetime_clock/{sample}_tree/{sample}_aligned_trimmed.fasta.clock.nexus", sample=SAMPLES)
+        expand("results/FINAL_REPORT/{sample}_root_to_tip_regression.pdf", sample=SAMPLES),
+        expand("results/FINAL_REPORT/{sample}_timetree.nexus", sample=SAMPLES)
+

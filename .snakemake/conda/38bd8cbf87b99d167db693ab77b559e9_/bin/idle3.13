@@ -1,0 +1,5 @@
+#!/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_/bin/python3.13
+
+from idlelib.pyshell import main
+if __name__ == '__main__':
+    main()

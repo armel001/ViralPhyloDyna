@@ -1,0 +1,118 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+Creating conda environment workflow/envs/treetime.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/treetime.yaml created (location: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_)
+Creating conda environment workflow/envs/gblocks.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/gblocks.yaml created (location: .snakemake/conda/e87063144f01018464a6bca12d029641_)
+Creating conda environment workflow/envs/seqkit.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/seqkit.yaml created (location: .snakemake/conda/ad7b7445f449c5e91328dad022088973_)
+Creating conda environment workflow/envs/mafft.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/mafft.yaml created (location: .snakemake/conda/74a7941edda4f0c31f986e6d9a101f4b_)
+Creating conda environment workflow/envs/iqtree.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/iqtree.yaml created (location: .snakemake/conda/718e0263b3a024fe2825541352618afa_)
+Using shell: /opt/homebrew/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                       count
+----------------------  -------
+alignment                     1
+all                           1
+fasta_concatenation           1
+initial_tree                  1
+mask_alignment                1
+metadata_concatenation        1
+treetime_ancestral            1
+treetime_clock                1
+total                         8
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Tue Mar 11 00:02:03 2025]
+Job 2: 
+        Concatenating query and background FASTA files and removing duplicates
+        Samples : alpha
+        
+Reason: Missing output files: results/fasta_concat/alpha_msa_rmdup.fasta
+
+Activating conda environment: .snakemake/conda/ad7b7445f449c5e91328dad022088973_
+
+[Tue Mar 11 00:02:03 2025]
+Job 1: 
+        Concatenating query and background metadata files
+        Samples : alpha
+        
+Reason: Missing output files: results/metadata_concat/alpha_metadata.tsv
+
+[Tue Mar 11 00:02:03 2025]
+Finished job 1.
+1 of 8 steps (12%) done
+[Tue Mar 11 00:02:03 2025]
+Finished job 2.
+2 of 8 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Mar 11 00:02:03 2025]
+Job 3: 
+        Aligning the concatenated FASTA file
+        Sample : alpha
+        
+Reason: Missing output files: results/alignment/alpha_aligned.fasta; Input files updated by another job: results/fasta_concat/alpha_msa_rmdup.fasta
+
+Activating conda environment: .snakemake/conda/74a7941edda4f0c31f986e6d9a101f4b_
+[Tue Mar 11 00:02:50 2025]
+Finished job 3.
+3 of 8 steps (38%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Mar 11 00:02:50 2025]
+Job 4: 
+        Masking and trimming the alignment using Gblocks
+        
+Reason: Missing output files: results/alignment/alpha_aligned_trimmed.fasta; Input files updated by another job: results/alignment/alpha_aligned.fasta
+
+Activating conda environment: .snakemake/conda/e87063144f01018464a6bca12d029641_
+[Tue Mar 11 00:02:53 2025]
+Finished job 4.
+4 of 8 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Mar 11 00:02:53 2025]
+Job 5: 
+        Building a phylogenetic tree using IQ-TREE
+        Sample : alpha
+        
+Reason: Missing output files: results/phylogenetic_tree/alpha_tree/alpha_aligned_trimmed.fasta.treefile; Input files updated by another job: results/alignment/alpha_aligned_trimmed.fasta
+
+Activating conda environment: .snakemake/conda/718e0263b3a024fe2825541352618afa_
+[Tue Mar 11 00:03:49 2025]
+Finished job 5.
+5 of 8 steps (62%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Tue Mar 11 00:03:49 2025]
+Job 6: 
+        Verifiying molecular clock signal
+        Sample : alpha
+        
+Reason: Missing output files: results/treetime_clock/alpha_tree/root_to_tip_regression.pdf; Input files updated by another job: results/metadata_concat/alpha_metadata.tsv, results/phylogenetic_tree/alpha_tree/alpha_aligned_trimmed.fasta.treefile
+
+RuleException in rule treetime_clock in file /Users/armel001/Documents/Workflow_template/workflow/rules/treetime_clock_testing.smk, line 1:
+NameError: The name 'final_dir' is unknown in this context. Please make sure that you defined that variable. Also note that braces not used for variable access have to be escaped by repeating them, i.e. {{print $1}}, when formatting the following:
+
+        treetime    clock                     --tree {input.initial_tree}                     --dates {input.metadata}                     --sequence-length {params.seq_len}                     --outdir {output.clock_dir}
+        
+        cp {output.clock_dir}/root_to_tip_regression.pdf {final_dir}/{sample}_root_to_tip_regression.pdf
+        echo 'Phylogenetic tree molecular clock signal verification completed for {wildcards.sample}'
+        >> {log}
+        

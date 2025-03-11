@@ -1,0 +1,12 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.7.0
+Libs: -L${libdir} -ltiff
+Libs.private: -lwebp -lzstd -llzma -lLerc -ljpeg -ldeflate -lz 
+Cflags: -I${includedir}
+Requires.private: libwebp libzstd liblzma Lerc libjpeg libdeflate zlib 

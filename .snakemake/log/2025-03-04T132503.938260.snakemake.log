@@ -1,9 +1,0 @@
-host: MPLCLTPO1561.ird.priv
-Building DAG of jobs...
-MissingInputException in rule metadata_concatenation in file /Users/armel001/Documents/Workflow_template/workflow/rules/data_prep.smk, line 28:
-Missing input files for rule metadata_concatenation:
-    output: results/metadata_concatenation/*metadata*_metadata.tsv
-    wildcards: wildcard=*metadata*
-    affected files:
-        resources/input_dir/*metadata*_Query.metadata.tsv
-        resources/input_dir/*metadata*_Background.metadata.tsv

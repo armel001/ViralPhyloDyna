@@ -1,0 +1,5 @@
+==> 2025-03-11 00:00:35 <==
+# cmd: /Users/armel001/miniforge3/condabin/conda env create --quiet --no-default-packages --file /Users/armel001/Documents/Workflow_template/.snakemake/conda/e87063144f01018464a6bca12d029641_.yaml --prefix /Users/armel001/Documents/Workflow_template/.snakemake/conda/e87063144f01018464a6bca12d029641_
+# conda version: 24.11.3
++bioconda/osx-64::gblocks-0.91b-h527b516_2
+# update specs: ['gblocks']

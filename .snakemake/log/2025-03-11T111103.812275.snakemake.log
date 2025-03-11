@@ -1,0 +1,39 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count
+------------------  -------
+all                       1
+treetime_ancestral        1
+total                     2
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Mar 11 11:11:06 2025]
+Job 7: 
+        Inferring ancestral sequences using treetime
+        Sample : alpha
+        
+Reason: Missing output files: results/alpha_final_tree/timetree.nexus
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Tue Mar 11 11:13:06 2025]
+Finished job 7.
+1 of 2 steps (50%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Tue Mar 11 11:13:06 2025]
+localrule all:
+    input: results/metadata_concat/alpha_metadata.tsv, results/fasta_concat/alpha_msa_rmdup.fasta, results/alignment/alpha_aligned.fasta, results/alignment/alpha_aligned_trimmed.fasta, results/phylogenetic_tree/alpha_tree/alpha_aligned_trimmed.fasta.treefile, results/alpha_final_tree/alpha_root_to_tip_regression.pdf, results/alpha_final_tree/timetree.nexus
+    jobid: 0
+    reason: Input files updated by another job: results/alpha_final_tree/timetree.nexus
+    resources: tmpdir=/var/folders/0k/yxjp5l81665234b076ynjzxr0000gq/T
+
+[Tue Mar 11 11:13:06 2025]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2025-03-11T111103.812275.snakemake.log

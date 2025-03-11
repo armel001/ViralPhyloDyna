@@ -1,0 +1,40 @@
+---
+
+# MY ENVS
+envs:
+  mafft:    "../envs/mafft.yaml"
+  treetime: "../envs/treetime.yaml"
+  gblocks:  "../envs/gblocks.yaml"
+  iqtree:   "../envs/iqtree.yaml"
+  seqkit:   "../envs/seqkit.yaml"
+
+# MY SAMPLES
+samples: # choose samples to run the pipeline, available options:
+   - 'alpha' # default
+   - 'beta'
+   - 'gamma'
+   #- 'yours' # custom
+
+
+######################################
+# DRAFT FOR LATER #
+###################
+resources:
+  threads: 4
+  memory: 8G
+  time: 1-00:00:00
+  
+
+params:
+  iqtree:
+    threads: 4
+    model: 'GTR+G'
+    bootstrap: 100
+    seed: 12345
+  gblocks:
+  treetime:
+    seq_len: 29650 # minimum sequence length in bp (default: 29000) [INT]
+    clock_rate: 0.008 # clock rate in subs per site per year (default: 0.001) [FLOAT]
+    clock_std_dev: 0.0035
+  mafft:    
+    threads: 4  

@@ -1,0 +1,11 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB XFree86-DRI
+Description: XCB XFree86-DRI Extension
+Version: 1.17.0
+Requires.private: xcb
+Libs: -L${libdir} -lxcb-xf86dri
+Cflags: -I${includedir}

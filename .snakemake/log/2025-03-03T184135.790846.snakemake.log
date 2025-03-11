@@ -1,9 +1,0 @@
-host: MPLCLTMP0423.local
-Building DAG of jobs...
-MissingInputException in rule fasta_concatenation in file /Users/armel001/Documents/Workflow_template/workflow/rules/data_prep.smk, line 2:
-Missing input files for rule fasta_concatenation:
-    output: results/fasta_concatenation/msa_delta.fasta, results/fasta_concatenation/report_delta.txt
-    wildcards: wildcard=delta
-    affected files:
-        resources/input_dir/Query_delta.fasta
-        resources/input_dir/Background_delta.fasta

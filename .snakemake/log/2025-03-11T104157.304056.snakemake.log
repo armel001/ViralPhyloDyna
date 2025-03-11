@@ -1,0 +1,40 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                   count
+------------------  -------
+all                       1
+treetime_ancestral        1
+treetime_clock            1
+total                     3
+
+Select jobs to execute...
+Execute 2 jobs...
+
+[Tue Mar 11 10:41:59 2025]
+Job 7: 
+        Inferring ancestral sequences using treetime
+        Sample : alpha
+        
+Reason: Missing output files: results/treetime_ancestral/alpha_tree/timetree.nexus
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+
+[Tue Mar 11 10:41:59 2025]
+Job 6: 
+        Verifiying molecular clock signal
+        Sample : alpha
+        
+Reason: Missing output files: results/alpha_final_tree/alpha_root_to_tip_regression.pdf
+
+RuleException in rule treetime_clock in file /Users/armel001/Documents/Workflow_template/workflow/rules/treetime_clock_testing.smk, line 1:
+NameError: The name 'sample' is unknown in this context. Did you mean 'wildcards.sample'?, when formatting the following:
+
+        treetime clock         --tree {input.initial_tree}         --dates {input.metadata}         --sequence-length {params.seq_len}         --outdir {output.clock_dir}
+        
+        cp {output.clock_dir}/root_to_tip_regression.pdf {output.tree_clock}/{sample}_root_to_tip_regression.pdf
+        echo 'Phylogenetic tree molecular clock signal verification completed for {wildcards.sample}'
+        >> {log}
+        

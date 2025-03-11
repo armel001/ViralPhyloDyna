@@ -1,0 +1,105 @@
+{
+  "build": "h4b5e92a_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "__osx >=10.13"
+  ],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/libiconv-1.18-h4b5e92a_1",
+  "features": "",
+  "files": [
+    "include/iconv.h",
+    "include/libcharset.h",
+    "include/localcharset.h",
+    "lib/libcharset.1.dylib",
+    "lib/libcharset.a",
+    "lib/libcharset.dylib",
+    "lib/libiconv.2.dylib",
+    "lib/libiconv.a",
+    "lib/libiconv.dylib"
+  ],
+  "fn": "libiconv-1.18-h4b5e92a_1.conda",
+  "license": "LGPL-2.1-only",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/libiconv-1.18-h4b5e92a_1",
+    "type": 1
+  },
+  "md5": "6283140d7b2b55b6b095af939b71b13f",
+  "name": "libiconv",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/libiconv-1.18-h4b5e92a_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/iconv.h",
+        "path_type": "hardlink",
+        "sha256": "e60b919d6ce6474ca5f9866486f5780a0ff3dab951facb8836908dfd486e2e81",
+        "sha256_in_prefix": "e60b919d6ce6474ca5f9866486f5780a0ff3dab951facb8836908dfd486e2e81",
+        "size_in_bytes": 9663
+      },
+      {
+        "_path": "include/libcharset.h",
+        "path_type": "hardlink",
+        "sha256": "180d05ba6adb348e150c6973ab795fe422da0b05e09f8ba7c369746ed1901702",
+        "sha256_in_prefix": "180d05ba6adb348e150c6973ab795fe422da0b05e09f8ba7c369746ed1901702",
+        "size_in_bytes": 1510
+      },
+      {
+        "_path": "include/localcharset.h",
+        "path_type": "hardlink",
+        "sha256": "67f01a81a41eab468313b34fb153aa11fe273b829c529e3a820a3877438d20e4",
+        "sha256_in_prefix": "67f01a81a41eab468313b34fb153aa11fe273b829c529e3a820a3877438d20e4",
+        "size_in_bytes": 6338
+      },
+      {
+        "_path": "lib/libcharset.1.dylib",
+        "path_type": "hardlink",
+        "sha256": "ef79fc125f3bf6cce0d05aaad9db114b31b792d21343adb865af9f265b614c62",
+        "sha256_in_prefix": "ef79fc125f3bf6cce0d05aaad9db114b31b792d21343adb865af9f265b614c62",
+        "size_in_bytes": 12784
+      },
+      {
+        "_path": "lib/libcharset.a",
+        "path_type": "hardlink",
+        "sha256": "f22c4df1ebc1094d543ea1e35e3ad238b20792b3dd33bf29b2aaa1b2c047a22e",
+        "sha256_in_prefix": "f22c4df1ebc1094d543ea1e35e3ad238b20792b3dd33bf29b2aaa1b2c047a22e",
+        "size_in_bytes": 2840
+      },
+      {
+        "_path": "lib/libcharset.dylib",
+        "path_type": "softlink",
+        "sha256": "ef79fc125f3bf6cce0d05aaad9db114b31b792d21343adb865af9f265b614c62",
+        "size_in_bytes": 12784
+      },
+      {
+        "_path": "lib/libiconv.2.dylib",
+        "path_type": "hardlink",
+        "sha256": "d88fe5ad4967b8a0608e2313d74be2d8e2e70efb6dfe853b871f424aee7c5824",
+        "sha256_in_prefix": "d88fe5ad4967b8a0608e2313d74be2d8e2e70efb6dfe853b871f424aee7c5824",
+        "size_in_bytes": 982496
+      },
+      {
+        "_path": "lib/libiconv.a",
+        "path_type": "hardlink",
+        "sha256": "5b756b76b369cd0c88c026ce9066110b46873ede27ae5068edb0d27c8c4cae5b",
+        "sha256_in_prefix": "5b756b76b369cd0c88c026ce9066110b46873ede27ae5068edb0d27c8c4cae5b",
+        "size_in_bytes": 1009872
+      },
+      {
+        "_path": "lib/libiconv.dylib",
+        "path_type": "softlink",
+        "sha256": "d88fe5ad4967b8a0608e2313d74be2d8e2e70efb6dfe853b871f424aee7c5824",
+        "size_in_bytes": 982496
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "c2a9c65a245c7bcb8c17c94dd716dad2d42b7c98e0c17cc5553a5c60242c4dda",
+  "size": 669052,
+  "subdir": "osx-64",
+  "timestamp": 1740128415000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/libiconv-1.18-h4b5e92a_1.conda",
+  "version": "1.18"
+}

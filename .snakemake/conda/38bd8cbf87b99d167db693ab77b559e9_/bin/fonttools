@@ -1,0 +1,11 @@
+#!/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from fontTools.__main__ import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

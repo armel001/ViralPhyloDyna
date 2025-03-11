@@ -1,0 +1,11 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/webp
+
+Name: libsharpyuv
+Description: Library for sharp RGB to YUV conversion
+Version: 1.5.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lsharpyuv
+Libs.private:   

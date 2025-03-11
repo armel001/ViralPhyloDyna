@@ -1,0 +1,12 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: Lerc
+Description: Limited Error Raster Compression
+URL: https://github.com/Esri/lerc
+Version: 4.0.0
+Cflags: -I${includedir}
+Cflags.private: -DLERC_STATIC
+Libs: -L${libdir} -lLerc
