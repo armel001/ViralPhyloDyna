@@ -6,5 +6,5 @@ This pipeline is designed to help **AFROSCREEN** community members build large p
 
 #### Authors:
 
-- **Thibaut Armel Chérif Gnimadi** – *CERFIG, Guinea*  
+- **Thibaut Armel Chérif GNIMADI** – *CERFIG, Guinea*  
 - **Nicolas FERNANDEZ NUÑEZ** – *IRD, France*
