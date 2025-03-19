@@ -1,0 +1,10 @@
+name: ancestral_changes
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - python=3.7.12
+  - pandas=1.3.5
+  - numpy=1.21.6
+  - baltic=0.3.0

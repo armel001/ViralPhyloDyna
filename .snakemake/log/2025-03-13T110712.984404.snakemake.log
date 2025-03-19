@@ -1,0 +1,65 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+Using shell: /opt/homebrew/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                 count
+----------------  -------
+all                     1
+events_extaction        3
+total                   4
+
+Select jobs to execute...
+Execute 3 jobs...
+
+[Thu Mar 13 11:07:15 2025]
+Job 19: 
+        Extract events from the tree for the sample : beta
+        Using Baltic script developed by @eduan and col.
+        
+Reason: Missing output files: results/99_FINAL_REPORT/beta_annottated_tree_events.csv
+
+[Thu Mar 13 11:07:15 2025]
+Job 22: 
+        Extract events from the tree for the sample : alpha
+        Using Baltic script developed by @eduan and col.
+        
+Reason: Missing output files: results/99_FINAL_REPORT/alpha_annottated_tree_events.csv
+
+[Thu Mar 13 11:07:15 2025]
+Job 25: 
+        Extract events from the tree for the sample : delta
+        Using Baltic script developed by @eduan and col.
+        
+Reason: Missing output files: results/99_FINAL_REPORT/delta_annottated_tree_events.csv
+
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+[Thu Mar 13 11:07:18 2025]
+Finished job 22.
+1 of 4 steps (25%) done
+[Thu Mar 13 11:07:18 2025]
+Finished job 25.
+2 of 4 steps (50%) done
+[Thu Mar 13 11:07:18 2025]
+Finished job 19.
+3 of 4 steps (75%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:07:18 2025]
+localrule all:
+    input: results/99_FINAL_REPORT/beta_root_to_tip_regression.pdf, results/99_FINAL_REPORT/alpha_root_to_tip_regression.pdf, results/99_FINAL_REPORT/delta_root_to_tip_regression.pdf, results/99_FINAL_REPORT/beta_annottated_tree_events.csv, results/99_FINAL_REPORT/alpha_annottated_tree_events.csv, results/99_FINAL_REPORT/delta_annottated_tree_events.csv
+    jobid: 0
+    reason: Input files updated by another job: results/99_FINAL_REPORT/delta_annottated_tree_events.csv, results/99_FINAL_REPORT/beta_annottated_tree_events.csv, results/99_FINAL_REPORT/alpha_annottated_tree_events.csv
+    resources: tmpdir=/var/folders/0k/yxjp5l81665234b076ynjzxr0000gq/T
+
+[Thu Mar 13 11:07:18 2025]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: .snakemake/log/2025-03-13T110712.984404.snakemake.log

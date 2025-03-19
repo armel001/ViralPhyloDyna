@@ -1,0 +1,10 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+exec_prefix=${prefix}
+includedir=/Users/armel001/Documents/Workflow_template/.snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_/include
+libdir=/Users/armel001/Documents/Workflow_template/.snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_/lib
+
+Name: libdeflate
+Description: Fast implementation of DEFLATE, zlib, and gzip
+Version: 1.14
+Libs: -L${libdir} -ldeflate
+Cflags: -I${includedir}

@@ -11,9 +11,9 @@ rule alignment:
     resources:
         threads=THREADS_MAFFT
     input:
-        msa="results/fasta_concat/{sample}_msa_rmdup.fasta"
+        msa="results/00_Dataset/{sample}_msa_rmdup.fasta"
     output:
-        msa_aligned="results/alignment/{sample}_aligned.fasta"
+        msa_aligned="results/01_Alignment/{sample}_aligned.fasta"
     log:
         "results/log/{sample}_aligned.log"
     shell: 

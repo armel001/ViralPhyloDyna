@@ -1,0 +1,11 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB RandR
+Description: XCB RandR Extension
+Version: 1.13
+Requires.private: xcb xcb-render
+Libs: -L${libdir} -lxcb-randr
+Cflags: -I${includedir}

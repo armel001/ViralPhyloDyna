@@ -1,4 +1,4 @@
-==> 2025-03-11 00:01:51 <==
+==> 2025-03-12 17:10:24 <==
 # cmd: /Users/armel001/miniforge3/condabin/conda env create --quiet --no-default-packages --file /Users/armel001/Documents/Workflow_template/.snakemake/conda/718e0263b3a024fe2825541352618afa_.yaml --prefix /Users/armel001/Documents/Workflow_template/.snakemake/conda/718e0263b3a024fe2825541352618afa_
 # conda version: 24.11.3
 +bioconda/osx-64::iqtree-2.4.0-h6ed3961_0

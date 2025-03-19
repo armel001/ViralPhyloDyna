@@ -1,0 +1,12 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Readline
+Description: Gnu Readline library for command line editing
+URL: http://tiswww.cwru.edu/php/chet/readline/rltop.html
+Version: 8.2
+Requires.private: ncurses
+Libs: -L${libdir} -lreadline
+Cflags: -I${includedir}

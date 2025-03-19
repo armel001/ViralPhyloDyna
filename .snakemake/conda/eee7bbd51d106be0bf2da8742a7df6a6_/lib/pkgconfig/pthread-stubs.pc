@@ -1,0 +1,9 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+
+Name: pthread stubs
+Description: Meta package for pthread symbols - defaults to heavyweight ones if the C runtime does not provide lightweight ones.
+Version: 0.4
+Cflags: 
+Libs: 

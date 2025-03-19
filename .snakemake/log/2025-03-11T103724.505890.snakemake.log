@@ -1,5 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule all in file /Users/armel001/Documents/Workflow_template/workflow/Snakefile, line 35:
-Missing input files for rule all:
-    affected files:
-        results/alpha_final_tree/alpha_timetree.nexus

@@ -1,0 +1,11 @@
+prefix=/Users/armel001/Documents/Workflow_template/.snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB Shape
+Description: XCB Shape Extension
+Version: 1.13
+Requires.private: xcb
+Libs: -L${libdir} -lxcb-shape
+Cflags: -I${includedir}

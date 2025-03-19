@@ -1,0 +1,68 @@
+{
+  "build": "h00291cd_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/osx-64",
+  "constrains": [],
+  "depends": [
+    "__osx >=10.13"
+  ],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/xorg-libxdmcp-1.1.5-h00291cd_0",
+  "features": "",
+  "files": [
+    "include/X11/Xdmcp.h",
+    "lib/libXdmcp.6.dylib",
+    "lib/libXdmcp.dylib",
+    "lib/pkgconfig/xdmcp.pc"
+  ],
+  "fn": "xorg-libxdmcp-1.1.5-h00291cd_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/xorg-libxdmcp-1.1.5-h00291cd_0",
+    "type": 1
+  },
+  "md5": "9f438e1b6f4e73fd9e6d78bfe7c36743",
+  "name": "xorg-libxdmcp",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/xorg-libxdmcp-1.1.5-h00291cd_0",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/X11/Xdmcp.h",
+        "path_type": "hardlink",
+        "sha256": "7fd3eb99f92b1c566c87cab744ccbb85a4530152eeace73dbb493952a4f40477",
+        "sha256_in_prefix": "7fd3eb99f92b1c566c87cab744ccbb85a4530152eeace73dbb493952a4f40477",
+        "size_in_bytes": 8535
+      },
+      {
+        "_path": "lib/libXdmcp.6.dylib",
+        "path_type": "hardlink",
+        "sha256": "fca6a84def3df314865f4eb22c8903ca79b781a1434d1ced3d1b66d5b7891c50",
+        "sha256_in_prefix": "fca6a84def3df314865f4eb22c8903ca79b781a1434d1ced3d1b66d5b7891c50",
+        "size_in_bytes": 23448
+      },
+      {
+        "_path": "lib/libXdmcp.dylib",
+        "path_type": "softlink",
+        "sha256": "fca6a84def3df314865f4eb22c8903ca79b781a1434d1ced3d1b66d5b7891c50",
+        "size_in_bytes": 23448
+      },
+      {
+        "_path": "lib/pkgconfig/xdmcp.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/Users/runner/miniforge3/conda-bld/xorg-libxdmcp_1727794795051/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "e1cca108c727fa4587d8dce075e90c0d1af17555f682d557546462cb0a67f5e2",
+        "sha256_in_prefix": "3b277c6bc61ac597a44b0857fe8c42f46ab596f4faa1776223455e937f19ecea",
+        "size_in_bytes": 491
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "bb4d1ef9cafef535494adf9296130b6193b3a44375883185b5167de03eb1ac7f",
+  "size": 18465,
+  "subdir": "osx-64",
+  "timestamp": 1727794980000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/conda-forge/osx-64/xorg-libxdmcp-1.1.5-h00291cd_0.conda",
+  "version": "1.1.5"
+}

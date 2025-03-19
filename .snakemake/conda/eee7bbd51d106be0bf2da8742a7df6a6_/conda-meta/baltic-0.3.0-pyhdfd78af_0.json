@@ -1,0 +1,142 @@
+{
+  "build": "pyhdfd78af_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "constrains": [],
+  "depends": [
+    "matplotlib-base >=2.0.0",
+    "numpy >=1.16",
+    "python >=3.5"
+  ],
+  "extracted_package_dir": "/Users/armel001/miniforge3/pkgs/baltic-0.3.0-pyhdfd78af_0",
+  "features": "",
+  "files": [
+    "lib/python3.7/site-packages/baltic-0.3.0.dist-info/INSTALLER",
+    "lib/python3.7/site-packages/baltic-0.3.0.dist-info/LICENSE",
+    "lib/python3.7/site-packages/baltic-0.3.0.dist-info/METADATA",
+    "lib/python3.7/site-packages/baltic-0.3.0.dist-info/RECORD",
+    "lib/python3.7/site-packages/baltic-0.3.0.dist-info/REQUESTED",
+    "lib/python3.7/site-packages/baltic-0.3.0.dist-info/WHEEL",
+    "lib/python3.7/site-packages/baltic-0.3.0.dist-info/direct_url.json",
+    "lib/python3.7/site-packages/baltic-0.3.0.dist-info/top_level.txt",
+    "lib/python3.7/site-packages/baltic/__init__.py",
+    "lib/python3.7/site-packages/baltic/baltic.py",
+    "lib/python3.7/site-packages/baltic/samogitia.py",
+    "lib/python3.7/site-packages/baltic/__pycache__/__init__.cpython-37.pyc",
+    "lib/python3.7/site-packages/baltic/__pycache__/baltic.cpython-37.pyc",
+    "lib/python3.7/site-packages/baltic/__pycache__/samogitia.cpython-37.pyc"
+  ],
+  "fn": "baltic-0.3.0-pyhdfd78af_0.tar.bz2",
+  "license": "GPL-3.0-or-later",
+  "link": {
+    "source": "/Users/armel001/miniforge3/pkgs/baltic-0.3.0-pyhdfd78af_0",
+    "type": 1
+  },
+  "md5": "23e76e26bc0c96751d734e01d4b68699",
+  "name": "baltic",
+  "noarch": "python",
+  "package_tarball_full_path": "/Users/armel001/miniforge3/pkgs/baltic-0.3.0-pyhdfd78af_0.tar.bz2",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/baltic-0.3.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/baltic-0.3.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "sha256_in_prefix": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "size_in_bytes": 35149
+      },
+      {
+        "_path": "site-packages/baltic-0.3.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "334bb8fa0f156f9f30e28062c65e5f439c89f7e22af0e68bd7ae46f52e983b1a",
+        "sha256_in_prefix": "334bb8fa0f156f9f30e28062c65e5f439c89f7e22af0e68bd7ae46f52e983b1a",
+        "size_in_bytes": 1976
+      },
+      {
+        "_path": "site-packages/baltic-0.3.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "ad5e7e33a06c42f7c7311ed21977f1a5087a49c7c5b9a872da602f4ada15e3e5",
+        "sha256_in_prefix": "ad5e7e33a06c42f7c7311ed21977f1a5087a49c7c5b9a872da602f4ada15e3e5",
+        "size_in_bytes": 1022
+      },
+      {
+        "_path": "site-packages/baltic-0.3.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/baltic-0.3.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894",
+        "sha256_in_prefix": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "site-packages/baltic-0.3.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "19ffe929021b7dfe4bc1ab761099f3a1a7ead8beb4041e1978f0fb467030c645",
+        "sha256_in_prefix": "19ffe929021b7dfe4bc1ab761099f3a1a7ead8beb4041e1978f0fb467030c645",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "site-packages/baltic-0.3.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "1c95ccd4eaeae59ed4ab4efc77993eb2660bfb75811b67e57ee99b47203769f7",
+        "sha256_in_prefix": "1c95ccd4eaeae59ed4ab4efc77993eb2660bfb75811b67e57ee99b47203769f7",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "site-packages/baltic/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7e8f452b8b21104590a738c5e3e0eae955e060e53cc9b2549fbe8517ab4add95",
+        "sha256_in_prefix": "7e8f452b8b21104590a738c5e3e0eae955e060e53cc9b2549fbe8517ab4add95",
+        "size_in_bytes": 22
+      },
+      {
+        "_path": "site-packages/baltic/baltic.py",
+        "path_type": "hardlink",
+        "sha256": "28485656efd8d0cfdd07e542a3cf7ffabbac576e2961496548cfb2b884b67a2a",
+        "sha256_in_prefix": "28485656efd8d0cfdd07e542a3cf7ffabbac576e2961496548cfb2b884b67a2a",
+        "size_in_bytes": 118080
+      },
+      {
+        "_path": "site-packages/baltic/samogitia.py",
+        "path_type": "hardlink",
+        "sha256": "dc8a21eef5b301c26e0b6b69d8c610124ccc57c5b7588e49215fc0523b76215f",
+        "sha256_in_prefix": "dc8a21eef5b301c26e0b6b69d8c610124ccc57c5b7588e49215fc0523b76215f",
+        "size_in_bytes": 21925
+      },
+      {
+        "_path": "lib/python3.7/site-packages/baltic/__pycache__/__init__.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/baltic/__pycache__/baltic.cpython-37.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.7/site-packages/baltic/__pycache__/samogitia.cpython-37.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "baltic=0.3.0",
+  "sha256": "3a80762c871ac4b0028120ab7d8b73457796be1b038c0fe6679eff6d96c26c52",
+  "size": 53090,
+  "subdir": "noarch",
+  "timestamp": 1727453921000,
+  "track_features": "",
+  "url": "https://conda.anaconda.org/bioconda/noarch/baltic-0.3.0-pyhdfd78af_0.tar.bz2",
+  "version": "0.3.0"
+}

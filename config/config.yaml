@@ -1,5 +1,12 @@
 ---
 
+# MODULES
+modules:
+  phylogeny: true # 
+  report: true # 
+  subsampling: false # Perform a subsampling before tree (dafault: false)
+  phylodynamie: true # Perform a phylodynamic analysis (default: false)
+
 # MY ENVS
 envs:
   mafft:    "../envs/mafft.yaml"
@@ -7,6 +14,7 @@ envs:
   gblocks:  "../envs/gblocks.yaml"
   iqtree:   "../envs/iqtree.yaml"
   seqkit:   "../envs/seqkit.yaml"
+  ancestral_changes: "../envs/ancestral_changes.yaml"
 
 # MY SAMPLES
 samples: # choose samples to run the pipeline, available options:
@@ -23,7 +31,7 @@ resources:
   threads: 4
   memory: 8G
   time: 1-00:00:00
-  
+
 
 params:
   iqtree:
@@ -32,9 +40,15 @@ params:
     bootstrap: 100
     seed: 12345
   gblocks:
+    type: 'd'   # d = DNA, p = protein, c = codon
+    b5: 'h'     # h = half, n = strict
   treetime:
     seq_len: 29650 # minimum sequence length in bp (default: 29000) [INT]
     clock_rate: 0.008 # clock rate in subs per site per year (default: 0.001) [FLOAT]
     clock_std_dev: 0.0035
+    attribute: "country"
   mafft:    
     threads: 4  
+  absolute_time:
+    #date: 2021.7 # date of the most recent sample in the dataset
+    #file: 'results/00_Dataset/alpha_metadata.tsv' # date of the most recent sample in the dataset

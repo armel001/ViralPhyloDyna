@@ -10,12 +10,12 @@ rule treetime_clock:
     params:
         seq_len= SEQUENCE_LENGTH
     input:
-        initial_tree="results/phylogenetic_tree/{sample}_tree/{sample}_aligned_trimmed.fasta.treefile",
-        metadata="results/metadata_concat/{sample}_metadata.tsv"
+        initial_tree="results/02_Phylogenetic_tree/{sample}_tree/{sample}_aligned_trimmed.fasta.treefile",
+        metadata="results/00_Dataset/{sample}_metadata.tsv"
     output:
-        clock_dir = directory("results/treetime_clock/{sample}_tree/"),
+        clock_dir = directory("results/03_Treetime_clock/{sample}_tree/"),
        # final_dir = directory("results/{sample}_final_tree"),
-        tree_clock="results/FINAL_REPORT/{sample}_root_to_tip_regression.pdf"
+        tree_clock="results/99_FINAL_REPORT/{sample}_root_to_tip_regression.pdf"
     log:
         "results/log/{sample}_aligned_trimmed_tree_clock.log"
     shell:

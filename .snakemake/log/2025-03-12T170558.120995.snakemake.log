@@ -1,0 +1,51 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+Creating conda environment workflow/envs/ancestral_changes.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/ancestral_changes.yaml created (location: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_)
+Creating conda environment workflow/envs/mafft.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/mafft.yaml created (location: .snakemake/conda/74a7941edda4f0c31f986e6d9a101f4b_)
+Creating conda environment workflow/envs/treetime.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/treetime.yaml created (location: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_)
+Creating conda environment workflow/envs/gblocks.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/gblocks.yaml created (location: .snakemake/conda/e87063144f01018464a6bca12d029641_)
+Creating conda environment workflow/envs/iqtree.yaml...
+Downloading and installing remote packages.
+Environment for /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/iqtree.yaml created (location: .snakemake/conda/718e0263b3a024fe2825541352618afa_)
+Creating conda environment workflow/envs/seqkit.yaml...
+Downloading and installing remote packages.
+CreateCondaEnvironmentException:
+Could not create conda environment from /Users/armel001/Documents/Workflow_template/workflow/rules/../envs/seqkit.yaml:
+Command:
+conda env create --quiet --no-default-packages --file "/Users/armel001/Documents/Workflow_template/.snakemake/conda/ad7b7445f449c5e91328dad022088973_.yaml" --prefix "/Users/armel001/Documents/Workflow_template/.snakemake/conda/ad7b7445f449c5e91328dad022088973_"
+Output:
+Channels:
+ - conda-forge
+ - bioconda
+Platform: osx-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x111eec3a0>: Failed to resolve 'conda.anaconda.org' ([Errno 8] nodename nor servname provided, or not known)")': /bioconda/osx-64/seqkit-2.10.0-h527b516_0.tar.bz2
+
+Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x111eec670>: Failed to resolve 'conda.anaconda.org' ([Errno 8] nodename nor servname provided, or not known)")': /bioconda/osx-64/seqkit-2.10.0-h527b516_0.tar.bz2
+
+Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x111eec7f0>: Failed to resolve 'conda.anaconda.org' ([Errno 8] nodename nor servname provided, or not known)")': /bioconda/osx-64/seqkit-2.10.0-h527b516_0.tar.bz2
+
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/bioconda/osx-64/seqkit-2.10.0-h527b516_0.tar.bz2>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+CondaHTTPError: HTTP 000 CONNECTION FAILED for url <https://conda.anaconda.org/bioconda/osx-64/seqkit-2.10.0-h527b516_0.tar.bz2>
+Elapsed: -
+
+An HTTP error occurred when trying to retrieve this URL.
+HTTP errors are often intermittent, and a simple retry will get you on your way.
+
+
+

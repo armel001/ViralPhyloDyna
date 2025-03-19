@@ -1,0 +1,402 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+Using shell: /opt/homebrew/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                       count
+----------------------  -------
+alignment                     3
+all                           1
+events_extaction              3
+fasta_concatenation           3
+initial_tree                  3
+mask_alignment                3
+metadata_concatenation        3
+treetime_clock                3
+treetime_mugration            3
+treetime_timescale            3
+total                        28
+
+Select jobs to execute...
+Execute 4 jobs...
+
+[Thu Mar 13 11:45:37 2025]
+Job 6: 
+        Concatenating query and background metadata files
+        Samples : beta
+        
+Reason: Missing output files: results/00_Dataset/beta_metadata.tsv
+
+
+[Thu Mar 13 11:45:37 2025]
+Job 18: 
+        Concatenating query and background metadata files
+        Samples : delta
+        
+Reason: Missing output files: results/00_Dataset/delta_metadata.tsv
+
+
+[Thu Mar 13 11:45:37 2025]
+Job 5: 
+        Concatenating query and background FASTA files and removing duplicates
+        Samples : beta
+        
+Reason: Missing output files: results/00_Dataset/beta_msa_rmdup.fasta
+
+Activating conda environment: .snakemake/conda/ad7b7445f449c5e91328dad022088973_
+
+[Thu Mar 13 11:45:37 2025]
+Job 12: 
+        Concatenating query and background metadata files
+        Samples : alpha
+        
+Reason: Missing output files: results/00_Dataset/alpha_metadata.tsv
+
+[Thu Mar 13 11:45:37 2025]
+Finished job 6.
+1 of 28 steps (4%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:45:37 2025]
+Job 17: 
+        Concatenating query and background FASTA files and removing duplicates
+        Samples : delta
+        
+Reason: Missing output files: results/00_Dataset/delta_msa_rmdup.fasta
+
+Activating conda environment: .snakemake/conda/ad7b7445f449c5e91328dad022088973_
+[Thu Mar 13 11:45:37 2025]
+Finished job 18.
+2 of 28 steps (7%) done
+[Thu Mar 13 11:45:37 2025]
+Finished job 12.
+3 of 28 steps (11%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:45:37 2025]
+Job 11: 
+        Concatenating query and background FASTA files and removing duplicates
+        Samples : alpha
+        
+Reason: Missing output files: results/00_Dataset/alpha_msa_rmdup.fasta
+
+Activating conda environment: .snakemake/conda/ad7b7445f449c5e91328dad022088973_
+[Thu Mar 13 11:45:38 2025]
+Finished job 5.
+4 of 28 steps (14%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:45:38 2025]
+Job 4: 
+        Aligning the concatenated FASTA file
+        Sample : beta
+        
+Reason: Missing output files: results/01_Alignment/beta_aligned.fasta; Input files updated by another job: results/00_Dataset/beta_msa_rmdup.fasta
+
+Activating conda environment: .snakemake/conda/74a7941edda4f0c31f986e6d9a101f4b_
+[Thu Mar 13 11:45:38 2025]
+Finished job 17.
+5 of 28 steps (18%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:45:38 2025]
+Job 16: 
+        Aligning the concatenated FASTA file
+        Sample : delta
+        
+Reason: Missing output files: results/01_Alignment/delta_aligned.fasta; Input files updated by another job: results/00_Dataset/delta_msa_rmdup.fasta
+
+Activating conda environment: .snakemake/conda/74a7941edda4f0c31f986e6d9a101f4b_
+[Thu Mar 13 11:45:38 2025]
+Finished job 11.
+6 of 28 steps (21%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:45:38 2025]
+Job 10: 
+        Aligning the concatenated FASTA file
+        Sample : alpha
+        
+Reason: Missing output files: results/01_Alignment/alpha_aligned.fasta; Input files updated by another job: results/00_Dataset/alpha_msa_rmdup.fasta
+
+Activating conda environment: .snakemake/conda/74a7941edda4f0c31f986e6d9a101f4b_
+[Thu Mar 13 11:46:52 2025]
+Finished job 4.
+7 of 28 steps (25%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:46:52 2025]
+Job 3: 
+        Masking and trimming the alignment using Gblocks
+        Sample : beta
+        
+Reason: Missing output files: results/01_Alignment/beta_aligned_trimmed.fasta; Input files updated by another job: results/01_Alignment/beta_aligned.fasta
+
+Activating conda environment: .snakemake/conda/e87063144f01018464a6bca12d029641_
+[Thu Mar 13 11:46:53 2025]
+Finished job 10.
+8 of 28 steps (29%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:46:53 2025]
+Job 9: 
+        Masking and trimming the alignment using Gblocks
+        Sample : alpha
+        
+Reason: Missing output files: results/01_Alignment/alpha_aligned_trimmed.fasta; Input files updated by another job: results/01_Alignment/alpha_aligned.fasta
+
+Activating conda environment: .snakemake/conda/e87063144f01018464a6bca12d029641_
+[Thu Mar 13 11:46:53 2025]
+Finished job 16.
+9 of 28 steps (32%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:46:53 2025]
+Job 15: 
+        Masking and trimming the alignment using Gblocks
+        Sample : delta
+        
+Reason: Missing output files: results/01_Alignment/delta_aligned_trimmed.fasta; Input files updated by another job: results/01_Alignment/delta_aligned.fasta
+
+Activating conda environment: .snakemake/conda/e87063144f01018464a6bca12d029641_
+[Thu Mar 13 11:47:00 2025]
+Finished job 3.
+10 of 28 steps (36%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:47:00 2025]
+Job 2: 
+        Building a phylogenetic tree using IQ-TREE
+        Sample : beta
+        
+Reason: Missing output files: results/02_Phylogenetic_tree/beta_tree/beta_aligned_trimmed.fasta.treefile; Input files updated by another job: results/01_Alignment/beta_aligned_trimmed.fasta
+
+Activating conda environment: .snakemake/conda/718e0263b3a024fe2825541352618afa_
+[Thu Mar 13 11:47:00 2025]
+Finished job 15.
+11 of 28 steps (39%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:47:00 2025]
+Job 14: 
+        Building a phylogenetic tree using IQ-TREE
+        Sample : delta
+        
+Reason: Missing output files: results/02_Phylogenetic_tree/delta_tree/delta_aligned_trimmed.fasta.treefile; Input files updated by another job: results/01_Alignment/delta_aligned_trimmed.fasta
+
+Activating conda environment: .snakemake/conda/718e0263b3a024fe2825541352618afa_
+[Thu Mar 13 11:47:00 2025]
+Finished job 9.
+12 of 28 steps (43%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:47:00 2025]
+Job 8: 
+        Building a phylogenetic tree using IQ-TREE
+        Sample : alpha
+        
+Reason: Missing output files: results/02_Phylogenetic_tree/alpha_tree/alpha_aligned_trimmed.fasta.treefile; Input files updated by another job: results/01_Alignment/alpha_aligned_trimmed.fasta
+
+Activating conda environment: .snakemake/conda/718e0263b3a024fe2825541352618afa_
+[Thu Mar 13 11:49:41 2025]
+Finished job 2.
+13 of 28 steps (46%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Thu Mar 13 11:49:41 2025]
+Job 1: 
+        Verifiying molecular clock signal
+        Sample : beta
+        
+Reason: Missing output files: results/99_FINAL_REPORT/beta_root_to_tip_regression.pdf; Input files updated by another job: results/02_Phylogenetic_tree/beta_tree/beta_aligned_trimmed.fasta.treefile, results/00_Dataset/beta_metadata.tsv
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+
+[Thu Mar 13 11:49:41 2025]
+Job 21: 
+        Inferring time-scale phylogenetic tree using treetime
+        Sample : beta
+        
+Reason: Missing output files: results/99_FINAL_REPORT/beta_timetree.nexus; Input files updated by another job: results/02_Phylogenetic_tree/beta_tree/beta_aligned_trimmed.fasta.treefile, results/01_Alignment/beta_aligned.fasta, results/00_Dataset/beta_metadata.tsv
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Thu Mar 13 11:49:48 2025]
+Finished job 1.
+14 of 28 steps (50%) done
+[Thu Mar 13 11:49:58 2025]
+Finished job 8.
+15 of 28 steps (54%) done
+Select jobs to execute...
+Execute 2 jobs...
+
+[Thu Mar 13 11:49:58 2025]
+Job 7: 
+        Verifiying molecular clock signal
+        Sample : alpha
+        
+Reason: Missing output files: results/99_FINAL_REPORT/alpha_root_to_tip_regression.pdf; Input files updated by another job: results/00_Dataset/alpha_metadata.tsv, results/02_Phylogenetic_tree/alpha_tree/alpha_aligned_trimmed.fasta.treefile
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+
+[Thu Mar 13 11:49:58 2025]
+Job 24: 
+        Inferring time-scale phylogenetic tree using treetime
+        Sample : alpha
+        
+Reason: Missing output files: results/99_FINAL_REPORT/alpha_timetree.nexus; Input files updated by another job: results/00_Dataset/alpha_metadata.tsv, results/01_Alignment/alpha_aligned.fasta, results/02_Phylogenetic_tree/alpha_tree/alpha_aligned_trimmed.fasta.treefile
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Thu Mar 13 11:49:59 2025]
+Finished job 14.
+16 of 28 steps (57%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:49:59 2025]
+Job 13: 
+        Verifiying molecular clock signal
+        Sample : delta
+        
+Reason: Missing output files: results/99_FINAL_REPORT/delta_root_to_tip_regression.pdf; Input files updated by another job: results/02_Phylogenetic_tree/delta_tree/delta_aligned_trimmed.fasta.treefile, results/00_Dataset/delta_metadata.tsv
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Thu Mar 13 11:50:04 2025]
+Finished job 7.
+17 of 28 steps (61%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:50:04 2025]
+Job 27: 
+        Inferring time-scale phylogenetic tree using treetime
+        Sample : delta
+        
+Reason: Missing output files: results/99_FINAL_REPORT/delta_timetree.nexus; Input files updated by another job: results/02_Phylogenetic_tree/delta_tree/delta_aligned_trimmed.fasta.treefile, results/00_Dataset/delta_metadata.tsv, results/01_Alignment/delta_aligned.fasta
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Thu Mar 13 11:50:05 2025]
+Finished job 13.
+18 of 28 steps (64%) done
+[Thu Mar 13 11:52:02 2025]
+Finished job 21.
+19 of 28 steps (68%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:52:02 2025]
+Job 20: 
+        Place Attribute to each tip in the tree
+        Sample : beta
+        
+Reason: Missing output files: results/05_Treetime_mugration/beta_tree/annotated_tree.nexus; Input files updated by another job: results/99_FINAL_REPORT/beta_timetree.nexus, results/00_Dataset/beta_metadata.tsv
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Thu Mar 13 11:52:13 2025]
+Finished job 20.
+20 of 28 steps (71%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:52:13 2025]
+Job 19: 
+        Extract events from the tree for the sample : beta
+        Using Baltic script developed by @eduan and col.
+        
+Reason: Missing output files: results/99_FINAL_REPORT/beta_annottated_tree_events.csv; Input files updated by another job: results/05_Treetime_mugration/beta_tree/annotated_tree.nexus, results/00_Dataset/beta_metadata.tsv
+
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+[Thu Mar 13 11:52:16 2025]
+Finished job 19.
+21 of 28 steps (75%) done
+[Thu Mar 13 11:52:17 2025]
+Finished job 24.
+22 of 28 steps (79%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:52:17 2025]
+Job 23: 
+        Place Attribute to each tip in the tree
+        Sample : alpha
+        
+Reason: Missing output files: results/05_Treetime_mugration/alpha_tree/annotated_tree.nexus; Input files updated by another job: results/00_Dataset/alpha_metadata.tsv, results/99_FINAL_REPORT/alpha_timetree.nexus
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Thu Mar 13 11:52:19 2025]
+Finished job 27.
+23 of 28 steps (82%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:52:19 2025]
+Job 26: 
+        Place Attribute to each tip in the tree
+        Sample : delta
+        
+Reason: Missing output files: results/05_Treetime_mugration/delta_tree/annotated_tree.nexus; Input files updated by another job: results/00_Dataset/delta_metadata.tsv, results/99_FINAL_REPORT/delta_timetree.nexus
+
+Activating conda environment: .snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_
+[Thu Mar 13 11:52:26 2025]
+Finished job 23.
+24 of 28 steps (86%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:52:26 2025]
+Job 22: 
+        Extract events from the tree for the sample : alpha
+        Using Baltic script developed by @eduan and col.
+        
+Reason: Missing output files: results/99_FINAL_REPORT/alpha_annottated_tree_events.csv; Input files updated by another job: results/00_Dataset/alpha_metadata.tsv, results/05_Treetime_mugration/alpha_tree/annotated_tree.nexus
+
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+[Thu Mar 13 11:52:29 2025]
+Finished job 26.
+25 of 28 steps (89%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:52:29 2025]
+Job 25: 
+        Extract events from the tree for the sample : delta
+        Using Baltic script developed by @eduan and col.
+        
+Reason: Missing output files: results/99_FINAL_REPORT/delta_annottated_tree_events.csv; Input files updated by another job: results/00_Dataset/delta_metadata.tsv, results/05_Treetime_mugration/delta_tree/annotated_tree.nexus
+
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+[Thu Mar 13 11:52:29 2025]
+Finished job 22.
+26 of 28 steps (93%) done
+Activating conda environment: .snakemake/conda/eee7bbd51d106be0bf2da8742a7df6a6_
+[Thu Mar 13 11:52:34 2025]
+Finished job 25.
+27 of 28 steps (96%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Thu Mar 13 11:52:34 2025]
+localrule all:
+    input: results/99_FINAL_REPORT/beta_root_to_tip_regression.pdf, results/99_FINAL_REPORT/alpha_root_to_tip_regression.pdf, results/99_FINAL_REPORT/delta_root_to_tip_regression.pdf, results/99_FINAL_REPORT/beta_annottated_tree_events.csv, results/99_FINAL_REPORT/alpha_annottated_tree_events.csv, results/99_FINAL_REPORT/delta_annottated_tree_events.csv
+    jobid: 0
+    reason: Input files updated by another job: results/99_FINAL_REPORT/delta_root_to_tip_regression.pdf, results/99_FINAL_REPORT/alpha_annottated_tree_events.csv, results/99_FINAL_REPORT/alpha_root_to_tip_regression.pdf, results/99_FINAL_REPORT/beta_annottated_tree_events.csv, results/99_FINAL_REPORT/delta_annottated_tree_events.csv, results/99_FINAL_REPORT/beta_root_to_tip_regression.pdf
+    resources: tmpdir=/var/folders/0k/yxjp5l81665234b076ynjzxr0000gq/T
+
+[Thu Mar 13 11:52:34 2025]
+Finished job 0.
+28 of 28 steps (100%) done
+Complete log: .snakemake/log/2025-03-13T114535.115990.snakemake.log

@@ -12,8 +12,8 @@ rule fasta_concatenation:
         fasta_query="resources/input_dir/{sample}_Query.fasta",
         fasta_background="resources/input_dir/{sample}_Background.fasta"
     output: 
-        msa="results/fasta_concat/{sample}_msa.fasta",
-        msa_dedup="results/fasta_concat/{sample}_msa_rmdup.fasta"
+        msa="results/00_Dataset/{sample}_msa.fasta",
+        msa_dedup="results/00_Dataset/{sample}_msa_rmdup.fasta"
     log:
         "results/log/{sample}_fasta_concat.log"
     shell:
@@ -37,7 +37,7 @@ rule metadata_concatenation:
         metadata_query="resources/input_dir/{sample}_Query.metadata.tsv",
         metadata_background="resources/input_dir/{sample}_Background.metadata.tsv"
     output: 
-        metadata="results/metadata_concat/{sample}_metadata.tsv"
+        metadata="results/00_Dataset/{sample}_metadata.tsv"
     log:
         "results/log/{sample}_metadata_concat.log"
     shell:

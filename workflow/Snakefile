@@ -1,20 +1,24 @@
 
-
-
-
-
 ##################################################
 # CONFIGURATION
 ##################################################
 configfile: "config/config.yaml"
 
-
+##################################################
 # RESOURCES
 ##################################################
 
 THREADS = config["resources"]["threads"]
 MEM = config["resources"]["memory"]
 TIME = config["resources"]["time"]
+
+##################################################
+# FUNCTIONS
+##################################################
+# imports
+from scripts.functions import get_absolute_time
+from scripts.functions import get_msa_input
+from scripts.functions import get_final_outputs
 
 
 ##################################################
@@ -25,16 +29,31 @@ TREETIME = config["envs"]["treetime"]
 GBLOCKS = config["envs"]["gblocks"]
 IQTREE = config["envs"]["iqtree"]
 SEQKIT = config["envs"]["seqkit"]
+ANCESTRAL_CHANGES = config["envs"]["ancestral_changes"]
 
-
-# PARAMS
-##################################################
+############################################################
+# PARAMS #
+##########
 SEQUENCE_LENGTH = config["params"]["treetime"]["seq_len"]
 TREETIME_CLOCK_RATE = config["params"]["treetime"]["clock_rate"]
 TREETIME_CLOCK_STD_DEV = config["params"]["treetime"]["clock_std_dev"]
 THREADS_MAFFT = config["params"]["mafft"]["threads"]
+TYPE_DNA = config["params"]["gblocks"]["type"]
+CONSERV_POST = config["params"]["gblocks"]["b5"]
+ATTRIBUTES = config["params"]["treetime"]["attribute"]
+#ABSOLUTE_TIME = config["params"]["absolute_time"]["date"]
+#FILE = config["params"]["absolute_time"]["file"]
 
 SAMPLES, = glob_wildcards("resources/input_dir/{sample}_Query.fasta")
+
+MODULES = config["modules"]
+
+##################################################
+# EXPORTS
+##################################################
+import scripts.functions as functions
+functions.SAMPLES = SAMPLES
+functions.MODULES = MODULES
 
 # INCLUDES
 ##################################################
@@ -43,15 +62,20 @@ include: "rules/data_anal_align.smk"
 include: "rules/data_anal_trim.smk"
 include: "rules/data_anal_tree.smk"
 include: "rules/treetime_clock_testing.smk"
-include: "rules/treetime_ancestral.smk"
+include: "rules/treetime_timescale.smk"
+include: "rules/treetime_mugration.smk"
+include: "rules/events_extraction.smk"
 
 rule all:
     input:
-        expand("results/metadata_concat/{sample}_metadata.tsv", sample=SAMPLES),
-        expand("results/fasta_concat/{sample}_msa_rmdup.fasta", sample=SAMPLES),
-        expand("results/alignment/{sample}_aligned.fasta", sample=SAMPLES),
-        expand("results/alignment/{sample}_aligned_trimmed.fasta", sample=SAMPLES),
-        expand("results/phylogenetic_tree/{sample}_tree/{sample}_aligned_trimmed.fasta.treefile", sample=SAMPLES),
-        expand("results/FINAL_REPORT/{sample}_root_to_tip_regression.pdf", sample=SAMPLES),
-        expand("results/FINAL_REPORT/{sample}_timetree.nexus", sample=SAMPLES)
+        final_outputs = get_final_outputs()
+        #expand("results/00_Dataset/{sample}_metadata.tsv", sample=SAMPLES),
+        #expand("results/00_Dataset/{sample}_msa_rmdup.fasta", sample=SAMPLES),
+        #expand("results/01_Alignment/{sample}_aligned.fasta", sample=SAMPLES),
+        #expand("results/01_Alignment/{sample}_aligned_trimmed.fasta", sample=SAMPLES),
+        #expand("results/02_Phylogenetic_tree/{sample}_tree/{sample}_aligned_trimmed.fasta.treefile", sample=SAMPLES),
+        #expand("results/99_FINAL_REPORT/{sample}_root_to_tip_regression.pdf", sample=SAMPLES),
+        #expand("results/99_FINAL_REPORT/{sample}_timetree.nexus", sample=SAMPLES),
+        #expand("results/99_FINAL_REPORT/{sample}_annotated_tree.nexus", sample=SAMPLES),
+        #annottated_tree_even = expand("results/99_FINAL_REPORT/{sample}_annottated_tree_events.csv", sample=SAMPLES)
 
