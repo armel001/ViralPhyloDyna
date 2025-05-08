@@ -40,7 +40,7 @@ conda install -c bioconda snakemake
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 Make sure to configure your input files "fasta and metadata" correctly. 
 Example : alpha_Background.fasta and alpha_Background.metadata.tsv
@@ -62,7 +62,7 @@ snakemake -n
 
 ---
 
-## 🔄 Update
+##  Update
 
 To update the pipeline to the latest version:
 ```bash
@@ -77,7 +77,7 @@ conda env update --file envs/environment.yaml --prune
 
 ---
 
-## 📚 Reference
+##  Reference
 
 ### Tools Used
 
@@ -105,13 +105,13 @@ conda env update --file envs/environment.yaml --prune
 
 ---
 
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 This pipeline was developed with support from **CERFIG**, **IRD**, and the **AFROSCREEN** project.
 
 ---
 
-## 📬 Contact
+##  Contact
 
 For questions, issues or contributions, please contact:  
 **Thibaut Armel Chérif Gnimadi**  
