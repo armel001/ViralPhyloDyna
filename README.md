@@ -48,7 +48,7 @@ Make sure to configure your input files "fasta and metadata" correctly.
 The main input files are:
 - `resources/input_dir/`: folder containing viral sequence alignments (FASTA format) and metadata in tsv format           
             
-        *Example : `resources/input_dir/alpha_Background.fasta` and `alpha_Background.metadata.tsv`*
+- *Example : `resources/input_dir/alpha_Background.fasta` and `alpha_Background.metadata.tsv`*
 
 
 You can run the pipeline using the following command:
