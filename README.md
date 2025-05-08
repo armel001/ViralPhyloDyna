@@ -43,12 +43,12 @@ conda install -c bioconda snakemake
 ##  Usage
 
 Make sure to configure your input files "fasta and metadata" correctly. 
-*Example : alpha_Background.fasta and alpha_Background.metadata.tsv*
+*Example : alpha_Background.fasta, alpha_Query.fasta, alpha_Background.metadata.tsv and alpha_Query.metadata.tsv*
 
 The main input files are:
 - `resources/input_dir/`: folder containing viral sequence alignments (FASTA format) and metadata in tsv format           
             
-- *Example : `resources/input_dir/alpha_Background.fasta` and `alpha_Background.metadata.tsv`*
+- *Example : `resources/input_dir/alpha_Background.fasta`, `resources/input_dir/alpha_Query.fasta`, `alpha_Background.metadata.tsv` and `resources/input_dir/alpha_Query.metadata.tsv`*
 
 
 You can run the pipeline using the following command:
