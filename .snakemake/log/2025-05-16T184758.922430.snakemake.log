@@ -1,0 +1,53 @@
+host: MPLCLTMP0423.local
+Building DAG of jobs...
+Your conda installation is not configured to use strict channel priorities. This is however important for having robust and correct environments (for details, see https://conda-forge.org/docs/user/tipsandtricks.html). Please consider to configure strict priorities by executing 'conda config --set channel_priority strict'.
+Using shell: /opt/homebrew/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Conda environments: ignored
+Job stats:
+job                   count
+------------------  -------
+all                       1
+events_extaction          1
+treetime_mugration        1
+total                     3
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Fri May 16 18:48:00 2025]
+Job 7: 
+        Place Attribute to each tip in the tree
+        Sample : alpha
+        
+Reason: Missing output files: results/05_Treetime_mugration/alpha_tree/annotated_tree.nexus
+
+RuleException:
+CalledProcessError in file /Users/armel001/git/ViralPhyloDyna/workflow/rules/treetime_mugration.smk, line 22:
+Command 'set -euo pipefail;  
+        treetime mugration         --tree results/99_FINAL_REPORT/alpha_timetree.nexus           --states results/00_Dataset/alpha_metadata.tsv             --attribute country         --outdir results/05_Treetime_mugration/alpha_tree         --confidence
+        echo 'Migration phylogenetic tree constructed alpha' >> results/log/alpha_aligned_trimmed_tree_ancestral.log results/log/alpha_aligned_trimmed_tree_ancestral.txt
+        cp results/05_Treetime_mugration/alpha_tree/annotated_tree.nexus results/99_FINAL_REPORT/alpha_annotated_tree.nexus' returned non-zero exit status 1.
+[Fri May 16 18:48:01 2025]
+Error in rule treetime_mugration:
+    jobid: 7
+    input: results/99_FINAL_REPORT/alpha_timetree.nexus, results/00_Dataset/alpha_metadata.tsv
+    output: results/05_Treetime_mugration/alpha_tree, results/05_Treetime_mugration/alpha_tree/annotated_tree.nexus, results/99_FINAL_REPORT/alpha_annotated_tree.nexus
+    log: results/log/alpha_aligned_trimmed_tree_ancestral.log, results/log/alpha_aligned_trimmed_tree_ancestral.txt (check log file(s) for error details)
+    conda-env: /Users/armel001/git/ViralPhyloDyna/.snakemake/conda/536e7ea08fd52202b5e3036f451a74b9_
+    shell:
+        
+        treetime mugration         --tree results/99_FINAL_REPORT/alpha_timetree.nexus           --states results/00_Dataset/alpha_metadata.tsv             --attribute country         --outdir results/05_Treetime_mugration/alpha_tree         --confidence
+        echo 'Migration phylogenetic tree constructed alpha' >> results/log/alpha_aligned_trimmed_tree_ancestral.log results/log/alpha_aligned_trimmed_tree_ancestral.txt
+        cp results/05_Treetime_mugration/alpha_tree/annotated_tree.nexus results/99_FINAL_REPORT/alpha_annotated_tree.nexus
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job treetime_mugration since they might be corrupted:
+results/05_Treetime_mugration/alpha_tree
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2025-05-16T184758.922430.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

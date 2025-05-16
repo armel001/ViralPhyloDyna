@@ -20,6 +20,7 @@ rule treetime_mugration:
         multiext("results/log/{sample}_aligned_trimmed_tree_ancestral", ".log", ".txt") 
     shell: 
         """
+        mkdir -p {output.mugration_dir}
         treetime mugration \
         --tree {input.time_scale_tree}   \
         --states {input.metadata}     \

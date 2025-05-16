@@ -40,17 +40,27 @@ rule metadata_concatenation:
         metadata="results/00_Dataset/{sample}_metadata.tsv"
     log:
         "results/log/{sample}_metadata_concat.log"
-    shell:
-        """
-        cat {input.metadata_query} > {output.metadata}
-        tail -n +2 {input.metadata_background} >> {output.metadata}
-        echo "Metadata concatenation completed for {wildcards.sample}" >> {log}
-        2>> {log}
-        """
-        
-        #"cat "                    # use this to concatenate files
-        #"{input.metadata_query} " # input file
-        #"-o 5 "                   # cmd optionnelle
-        #"1> {output.metadata} "   # output file
-        #"echo 'toto' "            # cmd optionnelle
-        #"2>> {log}"               # log file
+    run:
+        import pandas as pd
+
+        with open(log[0], "w") as logfile:
+            try:
+                query = pd.read_csv(input.metadata_query, sep='\t', dtype=str)
+                background = pd.read_csv(input.metadata_background, sep='\t', dtype=str)
+
+                # Check if the columns are the same
+                if list(query.columns) != list(background.columns):
+                    raise ValueError("The columns of the query and background metadata files do not match.")
+
+                # Concatenate the dataframes
+                combined = pd.concat([query, background], ignore_index=True)
+
+                # Save the combined dataframe to the output file
+                combined.to_csv(output.metadata, sep='\t', index=False)
+
+                logfile.write(f"Metadata concatenation successful for sample: {wildcards.sample}\n")
+                logfile.write(f"Total records: {len(combined)}\n")
+
+            except Exception as e:
+                logfile.write(f"ERROR during metadata concatenation for {wildcards.sample}:\n{str(e)}\n")
+                raise
