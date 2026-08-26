@@ -1,5 +1,0 @@
-#!/Users/armel001/Documents/Workflow_template/.snakemake/conda/38bd8cbf87b99d167db693ab77b559e9_/bin/python3.13
-
-import pydoc
-if __name__ == '__main__':
-    pydoc.cli()

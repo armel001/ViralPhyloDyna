@@ -1,8 +1,0 @@
-name: mafft
-channels:
-  - conda-forge
-  - bioconda
-  - nodefaults
-dependencies:
-  - mafft
-  
