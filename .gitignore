@@ -1,4 +1,13 @@
 # To ignore Resources 
 /results/*
-/documentations/*
-
+documentations/*
+.snakemake/*
+.vscode
+.gitlab-ci.yml
+.snakemake-workflow-catalog.yml
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+VERSION.txt
+set
+2025-11-24_clock/*
+resources/.DS_Store
